@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" exporter="Camunda Modeler" exporterVersion="1.4.0" expressionLanguage="http://www.w3.org/1999/XPath" id="sample-diagram" targetNamespace="http://bpmn.io/schema/bpmn" typeLanguage="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL bpmn0.xsd">
+  <bpmn:process camunda:modelerTemplate="com.e2open.datahub.core.message.flow.template.BpmnProcessTemplate" id="Process_5158d43ada" isClosed="false" isExecutable="true" name="SP_E2DX_To_E2NET(Interconnect-B2BC)_850_4010" processType="None">
+    <bpmn:documentation textFormat="text/plain">Default template to create a message flow</bpmn:documentation>
+    <bpmn:extensionElements>
+      <camunda:properties>
+        <camunda:property name="EXCEPTION_PROCESSOR_NAME" value="routeExceptionProcessor"/>
+        <camunda:property name="DLC" value="activemq://MESSAGEFLOW_DLC"/>
+        <camunda:property name="ARCHIVE_PAYLOAD" value="TRUE"/>
+        <camunda:property name="MAXIMUM_REDELIVERIES" value="0"/>
+        <camunda:property name="CONCURRENT_CONSUMERS" value="3"/>
+        <camunda:property name="CONVERSATION_ID_FLAG" value="FALSE"/>
+      </camunda:properties>
+    </bpmn:extensionElements>
+    <bpmn:serviceTask camunda:delegateExpression="{{PROCESS_NAME}}" camunda:modelerTemplate="com.e2open.datahub.core.message.flow.template.DataHubProcessTemplate" completionQuantity="1" id="ServiceTask_58c22a1d76" implementation="##WebService" isForCompensation="false" name="PLACEHOLDER_PROCESS" startQuantity="1">
+      <bpmn:extensionElements>
+        <camunda:properties>
+          <camunda:property name="ARCHIVE_PAYLOAD" value="INHERIT"/>
+          <camunda:property name="SERVICE_TASK_SUCCESS_CONDITION" value="FAIL_ON_ERROR"/>
+          <camunda:property name="ATTACH_WARNING_FALLOUTS" value="FALSE"/>
+          <camunda:property name="CAMEL_DSL_TYPE" value="LegacyProcess"/>
+          <camunda:property name="PRE_PROCESSOR_NAME" value="serviceTaskPreProcessor"/>
+          <camunda:property name="PROCESS_FILTER" value="ALL"/>
+          <camunda:property name="LANGUAGE_TYPE" value="JAVA"/>
+          <camunda:property name="PROCESS_NAME" value="PLACEHOLDER_PROCESS"/>
+        </camunda:properties>
+      </bpmn:extensionElements>
+      <bpmn:incoming>SequenceFlow_e4c6495d8c</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_e8ec67e0b4</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="SequenceFlow_e8ec67e0b4" sourceRef="ServiceTask_58c22a1d76" targetRef="IntermediateThrowEvent_ac4290af93"/>
+    <bpmn:intermediateThrowEvent camunda:modelerTemplate="com.e2open.datahub.core.message.flow.template.ThrowEventMessageQueueTemplate" id="IntermediateThrowEvent_ac4290af93" name="ENDPOINT_ID_VALUE 850-4010">
+      <bpmn:extensionElements>
+        <camunda:properties>
+          <camunda:property name="COMPONENT" value="activemq"/>
+          <camunda:property name="PRE_PROCESSOR_NAME" value="preProcessor"/>
+          <camunda:property name="ARCHIVE_PAYLOAD" value="INHERIT"/>
+          <camunda:property name="OUTBOUND" value="MESSAGEFLOW_OUTBOUND"/>
+          <camunda:property name="MESSAGE_ID" value="850-4010"/>
+          <camunda:property name="PARTNER_ID" value="QA-E2NET-dev1108"/>
+          <camunda:property name="ENDPOINT_ID" value="ENDPOINT_ID_VALUE"/>
+          <camunda:property name="LOGICAL_ENDPOINT_ID" value="LogicalEndPointID_VALUE"/>
+          <camunda:property name="CLOSURE_CONDITION" value="TECH_ACK_RECEIVED"/>
+        </camunda:properties>
+      </bpmn:extensionElements>
+      <bpmn:incoming>SequenceFlow_e8ec67e0b4</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_8779555bba</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_3f4e5d98f7" messageRef="Message_19e19bf5d4"/>
+    </bpmn:intermediateThrowEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_8779555bba" sourceRef="IntermediateThrowEvent_ac4290af93" targetRef="IntermediateCatchEvent_01db490eba"/>
+    <bpmn:intermediateCatchEvent camunda:modelerTemplate="com.e2open.datahub.core.message.flow.template.MessageAcknowledgementCatchEventTemplate" id="IntermediateCatchEvent_01db490eba" name="Tech. Ack. Received" parallelMultiple="false">
+      <bpmn:extensionElements>
+        <camunda:properties>
+          <camunda:property name="COMPONENT" value="bean"/>
+          <camunda:property name="PROCESSOR_NAME" value="technicalAcknowledgementConsumerProcessor"/>
+          <camunda:property name="ARCHIVE_PAYLOAD" value="INHERIT"/>
+        </camunda:properties>
+      </bpmn:extensionElements>
+      <bpmn:incoming>SequenceFlow_8779555bba</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_6349b46448</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_7492cbe5b9" messageRef="Message_58f494a2b9"/>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:endEvent camunda:modelerTemplate="com.e2open.datahub.core.message.flow.template.BoundaryEndEventTemplate" id="EndEvent_eecce6cf94" name="Done">
+      <bpmn:extensionElements>
+        <camunda:properties>
+          <camunda:property name="PROCESSOR_NAME" value="boundaryCompleteProcessor"/>
+        </camunda:properties>
+      </bpmn:extensionElements>
+      <bpmn:incoming>SequenceFlow_6349b46448</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:startEvent camunda:modelerTemplate="com.e2open.datahub.core.message.flow.template.TimeCycleTemplate" id="StartEvent_91d056ebed" isInterrupting="true" name="Yearly Scheduler" parallelMultiple="false">
+      <bpmn:extensionElements>
+        <camunda:properties>
+          <camunda:property name="COMPONENT" value="quartz"/>
+          <camunda:property name="TIMER_ID" value="Yearly_Scheduler"/>
+          <camunda:property name="GROUP_ID" value="TEST"/>
+          <camunda:property name="CRON_EXPRESSION_ID" value="0 0 0 1 1 ? *"/>
+          <camunda:property name="TRIGGER_TIME_ZONE_ID" value="UTC"/>
+          <camunda:property name="JOB_ID" value="{{process.id}}"/>
+          <camunda:property name="PROCESSOR_NAME" value="nonConcurrentConsumerProcessor"/>
+          <camunda:property name="RUN_ON_MASTER_HOST_ONLY" value="TRUE"/>
+          <camunda:property name="SCHEDULER_NAME" value="906231"/>
+          <camunda:property name="TRIGGER_REPEAT_INTERVAL" value="0"/>
+          <camunda:property name="TRIGGER_START_TIME" value="-1"/>
+          <camunda:property name="SCHEDULER_ID" value="906231"/>
+          <camunda:property name="GENERATE_EMPTY_MESSAGE" value="TRUE"/>
+        </camunda:properties>
+      </bpmn:extensionElements>
+      <bpmn:outgoing>SequenceFlow_e4c6495d8c</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_dbee7ed744">
+        <bpmn:timeCycle id="TimeCycle_45d1b80c78" xsi:type="bpmn:tFormalExpression">{{COMPONENT}}://{{GROUP_ID}}/{{TIMER_ID}}|{{JOB_ID}}?cron={{CRON_EXPRESSION_ID}}&amp;trigger.timeZone={{TRIGGER_TIME_ZONE_ID}}&amp;job.name={{SCHEDULER_NAME}}{{JOB_ID}}</bpmn:timeCycle>
+      </bpmn:timerEventDefinition>
+    </bpmn:startEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_e4c6495d8c" sourceRef="StartEvent_91d056ebed" targetRef="ServiceTask_58c22a1d76"/>
+    <bpmn:sequenceFlow id="SequenceFlow_6349b46448" sourceRef="IntermediateCatchEvent_01db490eba" targetRef="EndEvent_eecce6cf94"/>
+  </bpmn:process>
+  <bpmn:message id="Message_083b7b0793" name="{{COMPONENT}}://{{INBOUND}}:{{PARTNER_ID}}:{{ENDPOINT_ID}}:{{MESSAGE_ID}}"/>
+  <bpmn:message id="Message_d66d5082a1" name="{{COMPONENT}}://{{OUTBOUND}}:{{PARTNER_ID}}:{{ENDPOINT_ID}}:{{MESSAGE_ID}}"/>
+  <bpmn:message id="Message_58f494a2b9" name="{{COMPONENT}}://{{PROCESSOR_NAME}}"/>
+  <bpmn:message id="Message_341a5b40c9" name="{{COMPONENT}}://{{PROCESSOR_NAME}}"/>
+  <bpmn:message id="Message_e8a8b65011" name="{{COMPONENT}}://{{OUTBOUND}}:{{PARTNER_ID}}:{{ENDPOINT_ID}}:{{MESSAGE_ID}}"/>
+  <bpmn:message id="Message_9fa6b20ee4" name="{{COMPONENT}}://{{OUTBOUND}}:{{MESSAGE_PROFILE_NAME}}"/>
+  <bpmn:message id="Message_19e19bf5d4" name="{{COMPONENT}}://{{OUTBOUND}}:{{PARTNER_ID}}:{{ENDPOINT_ID}}:{{MESSAGE_ID}}"/>
+  <bpmn:message id="Message_4d95b56f84" name="{{COMPONENT}}://{{PROCESSOR_NAME}}"/>
+  <bpmn:message id="Message_005747eebf" name="{{COMPONENT}}://{{PROCESSOR_NAME}}"/>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane bpmnElement="Process_1ac719972e" id="BPMNPlane_1">
+      <bpmndi:BPMNShape bpmnElement="ServiceTask_58c22a1d76" id="ServiceTask_1oho13h_di">
+        <dc:Bounds height="80" width="100" x="338" y="247"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="SequenceFlow_e8ec67e0b4" id="SequenceFlow_010f5om_di">
+        <di:waypoint x="438" y="287"/>
+        <di:waypoint x="542" y="287"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0" width="90" x="509" y="272"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape bpmnElement="IntermediateThrowEvent_ac4290af93" id="IntermediateThrowEvent_0aaz7ai_di">
+        <dc:Bounds height="36" width="36" x="542" y="269"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="27" width="89" x="517" y="312"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="SequenceFlow_8779555bba" id="SequenceFlow_1xv8go0_di">
+        <di:waypoint x="578" y="287"/>
+        <di:waypoint x="723" y="287"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0" width="0" x="676" y="272"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape bpmnElement="IntermediateCatchEvent_01db490eba" id="IntermediateCatchEvent_1krib6v_di">
+        <dc:Bounds height="36" width="36" x="723" y="269"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="27" width="51" x="717" y="305"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="EndEvent_eecce6cf94" id="EndEvent_07y4fpe_di">
+        <dc:Bounds height="36" width="36" x="926" y="269"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="14" width="27" x="931" y="305"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="StartEvent_91d056ebed" id="StartEvent_1i71rpw_di">
+        <dc:Bounds height="36" width="36" x="82" y="269"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="14" width="83" x="59" y="312"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="SequenceFlow_e4c6495d8c" id="SequenceFlow_0400pfi_di">
+        <di:waypoint x="118" y="287"/>
+        <di:waypoint x="338" y="287"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="SequenceFlow_6349b46448" id="SequenceFlow_0uzrhfa_di">
+        <di:waypoint x="759" y="287"/>
+        <di:waypoint x="926" y="287"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

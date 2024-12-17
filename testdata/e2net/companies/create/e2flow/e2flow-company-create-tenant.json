@@ -1,0 +1,13 @@
+{
+    "org": {
+        "companyTypeName": "Tenant",
+        "name": "E2FlowFelxiSFTP",
+        "companyId": "E2FlowFelxiSFTP",
+        "communityUniqueID": "E2FlowFelxiSFTP",
+        "description": "Tenant for E2flow test",
+        "supportEmail": "sumit.paliwal@e2open.com",
+        "payloadSearchEnabled": false,
+        "monitorUnrouteableTxns": false
+    },
+    "auditRetentionDays": 30
+}

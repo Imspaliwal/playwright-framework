@@ -1,0 +1,13 @@
+{
+    "org": {
+        "companyTypeName": "Tenant",
+        "name": "E2netQAWatermill",
+        "companyId": "E2netQAWatermill",
+        "communityUniqueID": "E2netQAWatermill",
+        "description": "Tenant for Watermill test",
+        "supportEmail": "sumit.paliwal@e2open.com",
+        "payloadSearchEnabled": false,
+        "monitorUnrouteableTxns": false
+    },
+    "auditRetentionDays": 30
+}

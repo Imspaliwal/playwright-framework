@@ -1,0 +1,41 @@
+{
+    "name": "playwright-framework",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "prettier:write": "npx prettier --write .",
+        "prettier:check": "npx prettier --check .",
+        "lint": "npx eslint",
+        "list:fix": "eslist --fix",
+        "start": "npx playwright test debug.spec.js",
+        "debug": "npx playwright test debug.spec.js --debug",
+        "test:healthcheck": "npx playwright test --grep @healthcheck",
+        "test:smoke": "npx playwright test --grep @smoke",
+        "test:regression": "npx playwright test --grep @regression",
+        "test:all": "npm run test:healthcheck && npm run test:smoke && npm run test:regression",
+        "report": "npx playwright show-report"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "@eslint/js": "^9.13.0",
+        "eslint": "^9.13.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "globals": "^15.11.0",
+        "prettier": "3.3.3"
+    },
+    "dependencies": {
+        "@faker-js/faker": "^9.0.3",
+        "@playwright/test": "^1.48.0",
+        "@types/node": "^22.1.0",
+        "@types/oracledb": "^6.5.2",
+        "csv-parser": "^3.0.0",
+        "exceljs": "^4.4.0",
+        "form-data": "^4.0.1",
+        "node-oracledb": "^1.0.2",
+        "oracledb": "^6.6.0"
+    }
+}

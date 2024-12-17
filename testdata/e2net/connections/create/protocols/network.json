@@ -1,0 +1,441 @@
+{
+    "id": "20883",
+    "profileEntity": {
+        "lockVersion": 0,
+        "createTime": 1543225400477,
+        "active": true,
+        "onboarded": false,
+        "organization": {
+            "id": 20883,
+            "lockVersion": 0,
+            "baseUUID": "326ef592-597b-4796-87b8-058ab3937fd3",
+            "createUserId": 2081,
+            "updateUserId": 2081,
+            "createTime": 1542706957000,
+            "updateTime": 1542706957000,
+            "name": "AdminCompT131",
+            "referenceID": "ce16e875-7529-4396-8747-9aa2666078fd",
+            "communityUniqueID": "AdminCompT131",
+            "supportEmail": "admincompt131@qa.dev.e2open.com",
+            "description": "AdminCompT Tenant131",
+            "companyTypeName": "Tenant",
+            "parentCompanyName": null,
+            "url": null,
+            "sic": null,
+            "language": null,
+            "companyId": "AdminCompT131",
+            "statusNotificationsEnabled": false,
+            "payloadSearchEnabled": false,
+            "javaclass": "com.e2open.e2na.ejb.domain.CompanyEntity",
+            "timeZone": null,
+            "versionedId": "20883::0"
+        },
+        "partnerId": "AdminCompT131",
+        "partnerIdType": "01",
+        "promotionState": 5,
+        "throttleMax": -1,
+        "messageThrottleMax": -1,
+        "errorContainmentMax": -1,
+        "defaultPriorityProcessing": "2",
+        "queueTimeSoftLimit": 5,
+        "queueTimeHardLimit": 15,
+        "backlogSoftLimit": 500,
+        "backlogHardLimit": 2000,
+        "profileName": "AdminCompT131 network Connection",
+        "protocolName": "network",
+        "partnerName": "AdminCompT131",
+        "ownerCompanyUUID": "ce16e875-7529-4396-8747-9aa2666078fd",
+        "shared": false,
+        "edited": false,
+        "promotionStateStr": "approved",
+        "promotionStateEnum": "APPROVED",
+        "approved": true,
+        "modifiedTime": -1,
+        "b2BProtocol": "network",
+        "enabled": true,
+        "description": "Onboarded profile for AdminCompT131",
+        "name": "AdminCompT131 network Connection",
+        "displayName": "AdminCompT131/AdminCompT131 network Connection",
+        "versionedId": "null::0",
+        "protocol": {
+            "id": 2288,
+            "lockVersion": 2,
+            "baseUUID": "ac63f7de-25ca-41cb-81e8-b7e3ba28f6a8",
+            "createUserId": null,
+            "updateUserId": null,
+            "createTime": 1542696458000,
+            "updateTime": 1539146280000,
+            "name": "Default",
+            "description": "Connected Network protocol",
+            "onboardable": true,
+            "internal": false,
+            "certificateRequired": true,
+            "protocol": "network",
+            "payloadTypes": null,
+            "supportFiles": null,
+            "protocolProperties": [
+                {
+                    "id": 2289,
+                    "lockVersion": 0,
+                    "baseUUID": "21cd0ac6-62ad-4431-88d8-eeef73dd25e9",
+                    "createUserId": null,
+                    "updateUserId": null,
+                    "createTime": 1542696458000,
+                    "updateTime": null,
+                    "propertyType": "PROTOCOL",
+                    "encodeType": "JSON",
+                    "extendedProperties": {
+                        "propertyDefinitions": [
+                            {
+                                "name": "IncompleteTransactionAlertIntervals",
+                                "displayName": "protocol.incompletetransactionalertgroup.incompletetransactionalertintervals.name",
+                                "type": "string",
+                                "displayDescription": "protocol.incompletetransactionalertgroup.incompletetransactionalertintervals.doc",
+                                "group": "IncompleteTransactionAlertGroup",
+                                "displayGroup": "protocol.incompletetransactionalertgroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [
+                                    {
+                                        "value": "Any",
+                                        "displayValue": "e2na.any"
+                                    }
+                                ],
+                                "handlerClass": null,
+                                "maxLimit": null,
+                                "default": null
+                            },
+                            {
+                                "name": "IncompleteTransactionTimeout",
+                                "displayName": "protocol.incompletetransactionalertgroup.incompletetransactiontimeout.name",
+                                "type": "string",
+                                "displayDescription": "protocol.incompletetransactionalertgroup.incompletetransactiontimeout.doc",
+                                "group": "IncompleteTransactionAlertGroup",
+                                "displayGroup": "protocol.incompletetransactionalertgroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [
+                                    {
+                                        "value": "Any",
+                                        "displayValue": "e2na.any"
+                                    }
+                                ],
+                                "handlerClass": null,
+                                "maxLimit": null,
+                                "default": null
+                            },
+                            {
+                                "name": "FifoEnabled",
+                                "displayName": "protocol.fifotransactionreceivergroup.fifoenabled.name",
+                                "type": "boolean",
+                                "displayDescription": "protocol.fifotransactionreceivergroup.fifoenabled.doc",
+                                "group": "FIFOTransactionReceiverGroup",
+                                "displayGroup": "protocol.fifotransactionreceivergroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "maxLimit": null,
+                                "default": "false"
+                            },
+                            {
+                                "name": "FifoQueueName",
+                                "displayName": "protocol.fifotransactionreceivergroup.fifoqueuename.name",
+                                "type": "string",
+                                "displayDescription": "protocol.fifotransactionreceivergroup.fifoqueuename.doc",
+                                "group": "FIFOTransactionReceiverGroup",
+                                "displayGroup": "protocol.fifotransactionreceivergroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "maxLimit": null,
+                                "default": "${fromDuns}"
+                            },
+                            {
+                                "name": "Id",
+                                "displayName": "Id",
+                                "type": "string",
+                                "displayDescription": null,
+                                "group": "NetworkGroup",
+                                "displayGroup": "Network.group.name",
+                                "displayEnabled": true,
+                                "readOnly": true,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "maxLimit": null,
+                                "default": "Network"
+                            },
+                            {
+                                "name": "ProtocolCode",
+                                "displayName": "ProtocolCode",
+                                "type": "string",
+                                "displayDescription": null,
+                                "group": "NetworkGroup",
+                                "displayGroup": "Network.group.name",
+                                "displayEnabled": false,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "maxLimit": null,
+                                "default": "Network"
+                            },
+                            {
+                                "name": "ProtocolVersion",
+                                "displayName": "ProtocolVersion",
+                                "type": "string",
+                                "displayDescription": null,
+                                "group": "NetworkGroup",
+                                "displayGroup": "Network.group.name",
+                                "displayEnabled": false,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "maxLimit": null,
+                                "default": "1.00"
+                            },
+                            {
+                                "name": "NetworkConnectionId",
+                                "displayName": "protocol.network.networkconnectionid.name",
+                                "type": "enum",
+                                "displayDescription": "protocol.network.networkconnectionid.doc",
+                                "group": "NetworkGroup",
+                                "displayGroup": "Network.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": "query/getNetworkCompanies",
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "maxLimit": null,
+                                "default": null
+                            }
+                        ],
+                        "propertyFormat": "PERSISTENCE",
+                        "propertyEntries": [
+                            {
+                                "name": "NetworkConnectionId",
+                                "value": "",
+                                "attributes": {},
+                                "rank": 0,
+                                "group": null
+                            },
+                            {
+                                "name": "ProtocolCode",
+                                "value": "Network",
+                                "attributes": {},
+                                "rank": 0,
+                                "group": null
+                            },
+                            {
+                                "name": "Id",
+                                "value": "Network",
+                                "attributes": {},
+                                "rank": 0,
+                                "group": null
+                            },
+                            {
+                                "name": "ProtocolVersion",
+                                "value": "1.00",
+                                "attributes": {},
+                                "rank": 0,
+                                "group": null
+                            }
+                        ]
+                    },
+                    "encodedData": "",
+                    "versionedId": "2289::0"
+                }
+            ],
+            "protocolExtendedProperties": {
+                "propertyDefinitions": [
+                    {
+                        "name": "IncompleteTransactionAlertIntervals",
+                        "displayName": "protocol.incompletetransactionalertgroup.incompletetransactionalertintervals.name",
+                        "type": "string",
+                        "displayDescription": "protocol.incompletetransactionalertgroup.incompletetransactionalertintervals.doc",
+                        "group": "IncompleteTransactionAlertGroup",
+                        "displayGroup": "protocol.incompletetransactionalertgroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [
+                            {
+                                "value": "Any",
+                                "displayValue": "e2na.any"
+                            }
+                        ],
+                        "handlerClass": null,
+                        "maxLimit": null,
+                        "default": null
+                    },
+                    {
+                        "name": "IncompleteTransactionTimeout",
+                        "displayName": "protocol.incompletetransactionalertgroup.incompletetransactiontimeout.name",
+                        "type": "string",
+                        "displayDescription": "protocol.incompletetransactionalertgroup.incompletetransactiontimeout.doc",
+                        "group": "IncompleteTransactionAlertGroup",
+                        "displayGroup": "protocol.incompletetransactionalertgroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [
+                            {
+                                "value": "Any",
+                                "displayValue": "e2na.any"
+                            }
+                        ],
+                        "handlerClass": null,
+                        "maxLimit": null,
+                        "default": null
+                    },
+                    {
+                        "name": "FifoEnabled",
+                        "displayName": "protocol.fifotransactionreceivergroup.fifoenabled.name",
+                        "type": "boolean",
+                        "displayDescription": "protocol.fifotransactionreceivergroup.fifoenabled.doc",
+                        "group": "FIFOTransactionReceiverGroup",
+                        "displayGroup": "protocol.fifotransactionreceivergroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "maxLimit": null,
+                        "default": "false"
+                    },
+                    {
+                        "name": "FifoQueueName",
+                        "displayName": "protocol.fifotransactionreceivergroup.fifoqueuename.name",
+                        "type": "string",
+                        "displayDescription": "protocol.fifotransactionreceivergroup.fifoqueuename.doc",
+                        "group": "FIFOTransactionReceiverGroup",
+                        "displayGroup": "protocol.fifotransactionreceivergroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "maxLimit": null,
+                        "default": "${fromDuns}"
+                    },
+                    {
+                        "name": "Id",
+                        "displayName": "Id",
+                        "type": "string",
+                        "displayDescription": null,
+                        "group": "NetworkGroup",
+                        "displayGroup": "Network.group.name",
+                        "displayEnabled": true,
+                        "readOnly": true,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "maxLimit": null,
+                        "default": "Network"
+                    },
+                    {
+                        "name": "ProtocolCode",
+                        "displayName": "ProtocolCode",
+                        "type": "string",
+                        "displayDescription": null,
+                        "group": "NetworkGroup",
+                        "displayGroup": "Network.group.name",
+                        "displayEnabled": false,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "maxLimit": null,
+                        "default": "Network"
+                    },
+                    {
+                        "name": "ProtocolVersion",
+                        "displayName": "ProtocolVersion",
+                        "type": "string",
+                        "displayDescription": null,
+                        "group": "NetworkGroup",
+                        "displayGroup": "Network.group.name",
+                        "displayEnabled": false,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "maxLimit": null,
+                        "default": "1.00"
+                    },
+                    {
+                        "name": "NetworkConnectionId",
+                        "displayName": "protocol.network.networkconnectionid.name",
+                        "type": "enum",
+                        "displayDescription": "protocol.network.networkconnectionid.doc",
+                        "group": "NetworkGroup",
+                        "displayGroup": "Network.group.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": "query/getNetworkCompanies",
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "maxLimit": null,
+                        "default": null
+                    }
+                ],
+                "propertyFormat": "PERSISTENCE",
+                "propertyEntries": [
+                    {
+                        "name": "NetworkConnectionId",
+                        "value": "",
+                        "attributes": {},
+                        "rank": 0,
+                        "group": null
+                    },
+                    {
+                        "name": "ProtocolCode",
+                        "value": "Network",
+                        "attributes": {},
+                        "rank": 0,
+                        "group": null
+                    },
+                    {
+                        "name": "Id",
+                        "value": "Network",
+                        "attributes": {},
+                        "rank": 0,
+                        "group": null
+                    },
+                    {
+                        "name": "ProtocolVersion",
+                        "value": "1.00",
+                        "attributes": {},
+                        "rank": 0,
+                        "group": null
+                    }
+                ]
+            },
+            "versionedId": "2288::2"
+        }
+    },
+    "protocol": "network"
+}

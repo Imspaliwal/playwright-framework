@@ -1,0 +1,20 @@
+{
+    "env": [
+        {
+            "dev1108": {
+                "URL": "https://e2productqa.dev.e2open.com/pages/accept?destination=/dev1108_nc/e2net/console/web/main.action",
+                "username": "dev1108",
+                "password": "E2open123",
+                "email": "noReply@e2open.com"
+            }
+        },
+        {
+            "dev1164": {
+                "URL": "https://e2productqa.dev.e2open.com/pages/accept?destination=/dev1164_nc/e2net/console/web/main.action",
+                "username": "dev1164",
+                "password": "E2open123",
+                "email": "noReply@e2open.com"
+            }
+        }
+    ]
+}

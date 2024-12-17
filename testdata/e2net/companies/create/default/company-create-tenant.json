@@ -1,0 +1,13 @@
+{
+    "org": {
+        "companyTypeName": "Tenant",
+        "name": "CentOSSen",
+        "companyId": "CentOSSen",
+        "communityUniqueID": "integrated-qa-123",
+        "description": "Partner for FIFO cent os test",
+        "supportEmail": "centossen@qa.dev.e2open.com",
+        "payloadSearchEnabled": false,
+        "monitorUnrouteableTxns": false
+    },
+    "auditRetentionDays": 30
+}

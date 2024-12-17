@@ -1,0 +1,3170 @@
+{
+    "id": "23248",
+    "profileEntity": {
+        "lockVersion": 0,
+        "createTime": 1574759858702,
+        "description": "Onboarded profile for BrwsrCompat2IE11",
+        "shared": false,
+        "displayName": "BrwsrCompat2IE11/BrwsrCompat2IE11 rest Connection",
+        "b2BProtocol": "rest",
+        "onboarded": false,
+        "edited": false,
+        "promotionStateStr": "approved",
+        "promotionStateEnum": "APPROVED",
+        "approved": true,
+        "modifiedTime": -1,
+        "active": true,
+        "organization": {
+            "id": 23248,
+            "lockVersion": 0,
+            "baseUUID": "163174f6-929f-4f6f-aa62-306a07987b92",
+            "createUserId": 2081,
+            "updateUserId": 2081,
+            "createTime": 1555916245000,
+            "updateTime": 1555916245000,
+            "name": "BrwsrCompat2IE11",
+            "referenceID": "071458ae-d822-42a7-b8bf-ac20c2072675",
+            "communityUniqueID": "BrwsrCompat2IE11",
+            "supportEmail": "arun.vaidya@e2open.com",
+            "description": null,
+            "companyTypeName": "Tenant",
+            "parentCompanyName": null,
+            "url": null,
+            "sic": null,
+            "language": null,
+            "companyId": "BrwsrCompat2IE11",
+            "statusNotificationsEnabled": false,
+            "payloadSearchEnabled": false,
+            "timeZone": null,
+            "javaclass": "com.e2open.e2na.ejb.domain.CompanyEntity",
+            "versionedId": "19214::0"
+        },
+        "partnerId": "BrwsrCompat2IE11",
+        "partnerIdType": "01",
+        "promotionState": 5,
+        "throttleMax": -1,
+        "messageThrottleMax": -1,
+        "errorContainmentMax": -1,
+        "defaultPriorityProcessing": "2",
+        "queueTimeSoftLimit": 5,
+        "queueTimeHardLimit": 15,
+        "backlogSoftLimit": 500,
+        "backlogHardLimit": 2000,
+        "profileName": "BrwsrCompat2IE11 rest Connection",
+        "protocolName": "rest",
+        "partnerName": "BrwsrCompat2IE11",
+        "ownerCompanyUUID": "071458ae-d822-42a7-b8bf-ac20c2072675",
+        "name": "BrwsrCompat2IE11 rest Connection",
+        "enabled": true,
+        "versionedId": "null::0",
+        "protocol": {
+            "id": 2248,
+            "lockVersion": 63,
+            "baseUUID": "dc86fe8c-9f8f-47ed-b91c-698247a2e927",
+            "createUserId": null,
+            "updateUserId": null,
+            "createTime": 1553497723000,
+            "updateTime": 1571374140000,
+            "name": "Default",
+            "description": "rest b2b protocol",
+            "onboardable": true,
+            "internal": false,
+            "certificateRequired": true,
+            "protocol": "rest",
+            "payloadTypes": [
+                {
+                    "id": 2385,
+                    "lockVersion": 15,
+                    "baseUUID": "f6827a24-9e49-4d74-a51d-b95490ecdcfd",
+                    "createUserId": null,
+                    "updateUserId": null,
+                    "createTime": 1553497726000,
+                    "updateTime": 1571374140000,
+                    "name": "Custom JSON",
+                    "description": "Custom JSON",
+                    "schemaPath": null,
+                    "parsingScenarioPath": null,
+                    "splitScenarioPath": null,
+                    "chunkScenarioPath": null,
+                    "correlationScenarioPath": null,
+                    "functionAckScenarioPath": null,
+                    "transactionCompleteScenarioPath": null,
+                    "transmissionCompleteScenarioPath": null,
+                    "parsingScenarioData": null,
+                    "splitScenarioData": null,
+                    "chunkScenarioData": null,
+                    "correlationScenarioData": null,
+                    "functionAckScenarioData": null,
+                    "transactionCompleteScenarioData": null,
+                    "transmissionCompleteScenarioData": null,
+                    "mapLibraryKey": "CUSTOMJSON",
+                    "edited": false,
+                    "attributes": [],
+                    "payloadTypeEnum": "CUSTOM_JSON",
+                    "payloadExtendedProperties": {
+                        "propertyDefinitions": [],
+                        "propertyFormat": "PERSISTENCE",
+                        "propertyEntries": []
+                    },
+                    "schemaContents": null,
+                    "parsingScenarioContents": null,
+                    "splitScenarioContents": null,
+                    "chunkScenarioContents": null,
+                    "correlationScenarioContents": null,
+                    "functionAckScenarioContents": null,
+                    "transactionCompleteScenarioContents": null,
+                    "transmissionCompleteScenarioContents": null,
+                    "versionedId": "2385::15"
+                },
+                {
+                    "id": 2359,
+                    "lockVersion": 15,
+                    "baseUUID": "87d02148-d74c-4c8b-bb19-65935f4364c8",
+                    "createUserId": null,
+                    "updateUserId": null,
+                    "createTime": 1553497725000,
+                    "updateTime": 1571374140000,
+                    "name": "OAGIS JSON",
+                    "description": "OAGIS JSON",
+                    "schemaPath": null,
+                    "parsingScenarioPath": "/e2open/var/shared/e2na/resource/attachments/p2c-delta-20191021/payload_type/oagis-json-parsing.xml.ee0175c2-9ef4-4ac5-8e19-6ba428c3de0e",
+                    "splitScenarioPath": "/e2open/var/shared/e2na/resource/attachments/p2c-delta-20191021/payload_type/oagis-json-split.xml.ffd01ac4-0a64-4848-b577-bf23b371c535",
+                    "chunkScenarioPath": null,
+                    "correlationScenarioPath": "/e2open/var/shared/e2na/resource/attachments/p2c-delta-20191021/payload_type/oagis-json-correlation.xml.afd545c4-ea03-4668-b432-859c0050d649",
+                    "functionAckScenarioPath": "/e2open/var/shared/e2na/resource/attachments/p2c-delta-20191021/payload_type/oagis-json-functional-ack.xml.f64c13fc-3305-4c06-a845-ae27c828e945",
+                    "transactionCompleteScenarioPath": null,
+                    "transmissionCompleteScenarioPath": null,
+                    "parsingScenarioData": "<scenario name=\"OAGIS JSON Parsing Scenario\">\r\n\r\n  <conditional>\r\n    <test RoutingType=\"ContentBased\">\r\n      <!-- Payload parser for the OAGIS message -->\r\n      <handler class=\"com.e2open.e2na.protocol.payload.oagis.JSONPayloadParser\"\r\n        propfile=\"OAGIS_PayloadJSONPathProps\" />\r\n    </test>\r\n  </conditional>\r\n\r\n  <!-- If received message is a ConfirmBOD, mark it FA not require -->\r\n  <conditional>\r\n    <test dataType=\"ConfirmBOD\">\r\n      <set sendFunctionalAck=\"false\" />\r\n      <handler class=\"com.e2open.e2na.protocol.payload.oagis.SetCorrelationJSON\" />\r\n    </test>\r\n  </conditional>\r\n\r\n  <!-- Determine whether ConfirmBOD is requested -->\r\n  <conditional>\r\n    <test payload.confirmation.code=\"Always\">\r\n      <set requiresFunctionalAck=\"true\" />\r\n    </test>\r\n  </conditional>\r\n\r\n</scenario>\r\n",
+                    "splitScenarioData": "<scenario name=\"OAGIS JSON Split Scenario\">\n\n  <handler class=\"com.e2open.e2na.protocol.payload.util.SplitToSubTransaction\" />\n\n</scenario>\n",
+                    "chunkScenarioData": null,
+                    "correlationScenarioData": "<scenario name=\"OAGIS JSON Correlation Scenario\">\n\n  <!-- Set the correlation id on the outbound for anything other than ConfirmBOD -->\n  <handler class=\"com.e2open.e2na.protocol.payload.oagis.SetCorrelationJSON\" />\n\n</scenario>\n\n",
+                    "functionAckScenarioData": "<scenario name=\"OAGIS JSON FA Scenario\">\n\n  <!-- load the init process id ds on complete, for now -->\n  <handler class=\"com.e2open.e2na.protocol.payload.util.LoadSplitOriginalMessage\" />\n\n  <!-- Handler to populate error properties depending on status of the datasource -->\n  <handler class=\"com.e2open.e2na.protocol.payload.oagis.ConfirmBODErrorHandler\" />\n\n  <!-- Error properties used for transform, the props need to be defined for the \n    Informatica map to work -->\n  <set BODID=\"${transactionId}\" />\n\n  <transform type=\"informatica\" service=\"OAGIS_JSON_ConfirmBOD_FunctionalAcknowledgement\" />\n  <set dataType=\"ConfirmBOD\" />\n</scenario>\n",
+                    "transactionCompleteScenarioData": null,
+                    "transmissionCompleteScenarioData": null,
+                    "mapLibraryKey": "OAGIS-JSON",
+                    "edited": false,
+                    "attributes": [],
+                    "payloadTypeEnum": "OAGIS_JSON",
+                    "payloadExtendedProperties": {
+                        "propertyDefinitions": [
+                            {
+                                "name": "SenderId",
+                                "maxLimit": null,
+                                "displayName": "oagis.sender.id",
+                                "type": "string",
+                                "displayDescription": "oagis.sender.id.doc",
+                                "group": "OAGISGroup",
+                                "displayGroup": "oagis.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "ReceiverId",
+                                "maxLimit": null,
+                                "displayName": "oagis.receiver.id",
+                                "type": "string",
+                                "displayDescription": "oagis.receiver.id.doc",
+                                "group": "OAGISGroup",
+                                "displayGroup": "oagis.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "ConfirmationCode",
+                                "maxLimit": null,
+                                "displayName": "oagis.confirmation.code",
+                                "type": "enum",
+                                "displayDescription": "oagis.confirmation.code.doc",
+                                "group": "OAGISGroup",
+                                "displayGroup": "oagis.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [
+                                    {
+                                        "value": "Always",
+                                        "displayValue": "oagis.confirmation.code.always"
+                                    },
+                                    {
+                                        "value": "Never",
+                                        "displayValue": "oagis.confirmation.code.never"
+                                    }
+                                ],
+                                "attributes": [
+                                    {
+                                        "value": "messageType",
+                                        "displayValue": "e2na.message.type"
+                                    }
+                                ],
+                                "handlerClass": null,
+                                "default": "Never"
+                            },
+                            {
+                                "name": "BODId",
+                                "maxLimit": null,
+                                "displayName": "oagis.bod.id",
+                                "type": "string",
+                                "displayDescription": "oagis.bod.id.doc",
+                                "group": "OAGISGroup",
+                                "displayGroup": "oagis.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [
+                                    {
+                                        "value": "messageType",
+                                        "displayValue": "e2na.message.type"
+                                    }
+                                ],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "TaskId",
+                                "maxLimit": null,
+                                "displayName": "oagis.task.id",
+                                "type": "string",
+                                "displayDescription": "oagis.task.id.doc",
+                                "group": "OAGISGroup",
+                                "displayGroup": "oagis.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [
+                                    {
+                                        "value": "messageType",
+                                        "displayValue": "e2na.message.type"
+                                    }
+                                ],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "RoutingType",
+                                "maxLimit": null,
+                                "displayName": "e2na.routing.type",
+                                "type": "enum",
+                                "displayDescription": "e2na.routing.type.doc",
+                                "group": "RoutingTypeGroup",
+                                "displayGroup": "e2na.routing.type.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [
+                                    {
+                                        "value": "ProtocolBased",
+                                        "displayValue": "e2na.protocol.based"
+                                    },
+                                    {
+                                        "value": "ContentBased",
+                                        "displayValue": "e2na.content.based"
+                                    }
+                                ],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "ProtocolBased"
+                            },
+                            {
+                                "name": "InboundSplitEnabled",
+                                "maxLimit": null,
+                                "displayName": "batch.processing.is.inbound.split.enabled",
+                                "type": "boolean",
+                                "displayDescription": "batch.processing.is.inbound.split.enabled.doc",
+                                "group": "InboundSplitEnabledGroup",
+                                "displayGroup": "inbound.split.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "true"
+                            },
+                            {
+                                "name": "SplitPayloadCount",
+                                "maxLimit": null,
+                                "displayName": "e2na.protocol.payload.split.count.check",
+                                "type": "string",
+                                "displayDescription": "e2na.protocol.payload.split.count.check.doc",
+                                "group": "InboundSplitEnabledGroup",
+                                "displayGroup": "inbound.split.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "200"
+                            },
+                            {
+                                "name": "SplitPayloadCount",
+                                "maxLimit": null,
+                                "displayName": "e2na.protocol.payload.split.count.check",
+                                "type": "string",
+                                "displayDescription": "e2na.protocol.payload.split.count.check.doc",
+                                "group": "InboundSplitEnabledGroup",
+                                "displayGroup": "inbound.split.group.name",
+                                "displayEnabled": false,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "FunctionalAckProcessing",
+                                "maxLimit": null,
+                                "displayName": "functional.ack.processing.type",
+                                "type": "enum",
+                                "displayDescription": "functional.ack.processing.type.doc",
+                                "group": "FunctionalAckFullGroup",
+                                "displayGroup": "outbound.functional.ack.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [
+                                    {
+                                        "value": "AlwaysAfterValidation",
+                                        "displayValue": "functional.ack.always.after.validation"
+                                    },
+                                    {
+                                        "value": "IfRequestedAfterValidation",
+                                        "displayValue": "functional.ack.if.requested.after.validation"
+                                    },
+                                    {
+                                        "value": "IfRequestedAfterCompletion",
+                                        "displayValue": "functional.ack.if.requested.after.completion"
+                                    },
+                                    {
+                                        "value": "Never",
+                                        "displayValue": "functional.ack.never"
+                                    },
+                                    {
+                                        "value": "AlwaysAfterCompletion",
+                                        "displayValue": "functional.ack.always.after.completion"
+                                    }
+                                ],
+                                "attributes": [
+                                    {
+                                        "value": "messageType",
+                                        "displayValue": "e2na.message.type"
+                                    }
+                                ],
+                                "handlerClass": null,
+                                "default": "AlwaysAfterValidation"
+                            },
+                            {
+                                "name": "InboundFunctionalAckWaitEnabled",
+                                "maxLimit": null,
+                                "displayName": "inbound.functional.ack.wait.enabled",
+                                "type": "boolean",
+                                "displayDescription": "inbound.functional.ack.wait.enabled.doc",
+                                "group": "InboundFunctionalAckGroup",
+                                "displayGroup": "inbound.functional.ack.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "false"
+                            },
+                            {
+                                "name": "InboundFunctionalAckCorrelationEnabled",
+                                "maxLimit": null,
+                                "displayName": "inbound.functional.ack.correlation.enabled",
+                                "type": "boolean",
+                                "displayDescription": "inbound.functional.ack.correlation.enabled.doc",
+                                "group": "InboundFunctionalAckGroup",
+                                "displayGroup": "inbound.functional.ack.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "false"
+                            },
+                            {
+                                "name": "InboundFunctionalAckTimeout",
+                                "maxLimit": null,
+                                "displayName": "inbound.functional.ack.timeout",
+                                "type": "time",
+                                "displayDescription": "inbound.functional.ack.timeout.doc",
+                                "group": "InboundFunctionalAckGroup",
+                                "displayGroup": "inbound.functional.ack.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "00:00:00.00"
+                            },
+                            {
+                                "name": "InboundFunctionalAckTimeoutHandling",
+                                "maxLimit": null,
+                                "displayName": "inbound.functional.ack.timeout.handling",
+                                "type": "enum",
+                                "displayDescription": "inbound.functional.ack.timeout.handling.doc",
+                                "group": "InboundFunctionalAckGroup",
+                                "displayGroup": "inbound.functional.ack.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [
+                                    {
+                                        "value": "warning",
+                                        "displayValue": "inbound.functional.ack.warning.state"
+                                    },
+                                    {
+                                        "value": "error",
+                                        "displayValue": "inbound.functional.ack.error.state"
+                                    },
+                                    {
+                                        "value": "information",
+                                        "displayValue": "inbound.functional.ack.information.state"
+                                    }
+                                ],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "error"
+                            },
+                            {
+                                "name": "PayloadFunctionalAckDataType",
+                                "maxLimit": null,
+                                "displayName": "inbound.functional.ack.datatype",
+                                "type": "string",
+                                "displayDescription": "inbound.functional.ack.datatype.doc",
+                                "group": "InboundFunctionalAckGroup",
+                                "displayGroup": "inbound.functional.ack.group.name",
+                                "displayEnabled": false,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "PayloadFunctionalAckCorrelationScope",
+                                "maxLimit": null,
+                                "displayName": "functional.ack.correlation.scope",
+                                "type": "enum",
+                                "displayDescription": "functional.ack.correlation.scope.doc",
+                                "group": "PayloadFunctionalAckCorrelationScopeGroup",
+                                "displayGroup": "functional.ack.correlation.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [
+                                    {
+                                        "value": "global",
+                                        "displayValue": "functional.ack.correlation.global.scope"
+                                    },
+                                    {
+                                        "value": "connection",
+                                        "displayValue": "functional.ack.correlation.connection.scope"
+                                    },
+                                    {
+                                        "value": "partner",
+                                        "displayValue": "functional.ack.correlation.partner.scope"
+                                    }
+                                ],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "connection"
+                            },
+                            {
+                                "name": "SenderJSONMappingProps",
+                                "maxLimit": null,
+                                "displayName": "jsonpayload.sender.json.mapping",
+                                "type": "enum",
+                                "displayDescription": "jsonpayload.sender.json.mapping.doc",
+                                "group": "SenderJSONMappingPropsGroup",
+                                "displayGroup": "jsonpayload.sender.json.mapping.group",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": "JSONMappingHandler",
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "protocol.inValidationEnabled",
+                                "maxLimit": null,
+                                "displayName": "payload.inbound.message.validation.enabled",
+                                "type": "boolean",
+                                "displayDescription": "payload.inbound.message.validation.enabled.doc",
+                                "group": "PayloadMessageProcessingGroup",
+                                "displayGroup": "payload.message.processing.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [
+                                    {
+                                        "value": "messageType",
+                                        "displayValue": "e2na.message.type"
+                                    }
+                                ],
+                                "handlerClass": null,
+                                "default": "true"
+                            },
+                            {
+                                "name": "protocol.outValidationEnabled",
+                                "maxLimit": null,
+                                "displayName": "payload.outbound.message.validation.enabled",
+                                "type": "boolean",
+                                "displayDescription": "payload.outbound.message.validation.enabled.doc",
+                                "group": "PayloadMessageProcessingGroup",
+                                "displayGroup": "payload.message.processing.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [
+                                    {
+                                        "value": "messageType",
+                                        "displayValue": "e2na.message.type"
+                                    }
+                                ],
+                                "handlerClass": null,
+                                "default": "true"
+                            }
+                        ],
+                        "propertyFormat": "PERSISTENCE",
+                        "propertyEntries": [
+                            {
+                                "name": "ConfirmationCode",
+                                "value": "Never",
+                                "attributes": {},
+                                "rank": 0,
+                                "group": null
+                            },
+                            {
+                                "name": "PayloadFunctionalAckDataType",
+                                "value": "ConfirmBOD",
+                                "attributes": {},
+                                "rank": 0,
+                                "group": null
+                            },
+                            {
+                                "name": "RoutingType",
+                                "value": "ContentBased",
+                                "attributes": {},
+                                "rank": 0,
+                                "group": null
+                            }
+                        ]
+                    },
+                    "schemaContents": null,
+                    "parsingScenarioContents": "<scenario name=\"OAGIS JSON Parsing Scenario\">\r\n\r\n  <conditional>\r\n    <test RoutingType=\"ContentBased\">\r\n      <!-- Payload parser for the OAGIS message -->\r\n      <handler class=\"com.e2open.e2na.protocol.payload.oagis.JSONPayloadParser\"\r\n        propfile=\"OAGIS_PayloadJSONPathProps\" />\r\n    </test>\r\n  </conditional>\r\n\r\n  <!-- If received message is a ConfirmBOD, mark it FA not require -->\r\n  <conditional>\r\n    <test dataType=\"ConfirmBOD\">\r\n      <set sendFunctionalAck=\"false\" />\r\n      <handler class=\"com.e2open.e2na.protocol.payload.oagis.SetCorrelationJSON\" />\r\n    </test>\r\n  </conditional>\r\n\r\n  <!-- Determine whether ConfirmBOD is requested -->\r\n  <conditional>\r\n    <test payload.confirmation.code=\"Always\">\r\n      <set requiresFunctionalAck=\"true\" />\r\n    </test>\r\n  </conditional>\r\n\r\n</scenario>\r\n",
+                    "splitScenarioContents": "<scenario name=\"OAGIS JSON Split Scenario\">\n\n  <handler class=\"com.e2open.e2na.protocol.payload.util.SplitToSubTransaction\" />\n\n</scenario>\n",
+                    "chunkScenarioContents": null,
+                    "correlationScenarioContents": "<scenario name=\"OAGIS JSON Correlation Scenario\">\n\n  <!-- Set the correlation id on the outbound for anything other than ConfirmBOD -->\n  <handler class=\"com.e2open.e2na.protocol.payload.oagis.SetCorrelationJSON\" />\n\n</scenario>\n\n",
+                    "functionAckScenarioContents": "<scenario name=\"OAGIS JSON FA Scenario\">\n\n  <!-- load the init process id ds on complete, for now -->\n  <handler class=\"com.e2open.e2na.protocol.payload.util.LoadSplitOriginalMessage\" />\n\n  <!-- Handler to populate error properties depending on status of the datasource -->\n  <handler class=\"com.e2open.e2na.protocol.payload.oagis.ConfirmBODErrorHandler\" />\n\n  <!-- Error properties used for transform, the props need to be defined for the \n    Informatica map to work -->\n  <set BODID=\"${transactionId}\" />\n\n  <transform type=\"informatica\" service=\"OAGIS_JSON_ConfirmBOD_FunctionalAcknowledgement\" />\n  <set dataType=\"ConfirmBOD\" />\n</scenario>\n",
+                    "transactionCompleteScenarioContents": null,
+                    "transmissionCompleteScenarioContents": null,
+                    "versionedId": "2359::15"
+                }
+            ],
+            "supportFiles": null,
+            "protocolProperties": [
+                {
+                    "id": 2249,
+                    "lockVersion": 15,
+                    "baseUUID": "abe46116-fc9f-41d5-81c4-195959e5a272",
+                    "createUserId": null,
+                    "updateUserId": null,
+                    "createTime": 1553497723000,
+                    "updateTime": null,
+                    "propertyType": "PROTOCOL",
+                    "encodeType": "JSON",
+                    "extendedProperties": {
+                        "propertyDefinitions": [
+                            {
+                                "name": "ReceiverHeaderProps",
+                                "maxLimit": null,
+                                "displayName": "protocol.httpheadergroup.receiverheaderprops.name",
+                                "type": "string",
+                                "displayDescription": "protocol.httpheadergroup.receiverheaderprops.do/c",
+                                "group": "HttpHeaderGroup",
+                                "displayGroup": "protocol.httpheadergroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "SenderHeaderProps",
+                                "maxLimit": null,
+                                "displayName": "protocol.httpheadergroup.senderheaderprops.name",
+                                "type": "string",
+                                "displayDescription": "protocol.httpheadergroup.senderheaderprops.doc",
+                                "group": "HttpHeaderGroup",
+                                "displayGroup": "protocol.httpheadergroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "StatusResponseCodeProps",
+                                "maxLimit": null,
+                                "displayName": "protocol.httpheadergroup.statusresponsecodeprops.name",
+                                "type": "string",
+                                "displayDescription": "protocol.httpheadergroup.statusresponsecodeprops.doc",
+                                "group": "HttpHeaderGroup",
+                                "displayGroup": "protocol.httpheadergroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "TransportEncoding",
+                                "maxLimit": null,
+                                "displayName": "protocol.httptransportgroup.transportencoding.name",
+                                "type": "enum",
+                                "displayDescription": "protocol.httptransportgroup.transportencoding.doc",
+                                "group": "HttpTransportGroup",
+                                "displayGroup": "protocol.httptransportgroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [
+                                    {
+                                        "value": "NONE",
+                                        "displayValue": "NONE"
+                                    },
+                                    {
+                                        "value": "CHUNKED",
+                                        "displayValue": "CHUNKED"
+                                    }
+                                ],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "NONE"
+                            },
+                            {
+                                "name": "TransferEncoding",
+                                "maxLimit": null,
+                                "displayName": "protocol.httptransportgroup.transferencoding.name",
+                                "type": "enum",
+                                "displayDescription": "protocol.httptransportgroup.transferencoding.doc",
+                                "group": "HttpTransportGroup",
+                                "displayGroup": "protocol.httptransportgroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [
+                                    {
+                                        "value": "quoted-printable",
+                                        "displayValue": "quoted-printable"
+                                    },
+                                    {
+                                        "value": "binary",
+                                        "displayValue": "binary"
+                                    },
+                                    {
+                                        "value": "base64",
+                                        "displayValue": "base64"
+                                    }
+                                ],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "URL",
+                                "maxLimit": null,
+                                "displayName": "protocol.httptransportgroup.url.name",
+                                "type": "anyURI",
+                                "displayDescription": "protocol.httptransportgroup.url.doc",
+                                "group": "HttpTransportGroup",
+                                "displayGroup": "protocol.httptransportgroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "AckURL",
+                                "maxLimit": null,
+                                "displayName": "protocol.httptransportgroup.ackurl.name",
+                                "type": "anyURI",
+                                "displayDescription": "protocol.httptransportgroup.ackurl.doc",
+                                "group": "HttpTransportGroup",
+                                "displayGroup": "protocol.httptransportgroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "ServerAuthRequired",
+                                "maxLimit": null,
+                                "displayName": "protocol.httptransportgroup.serverauthrequired.name",
+                                "type": "enum",
+                                "displayDescription": "protocol.httptransportgroup.serverauthrequired.doc",
+                                "group": "HttpTransportGroup",
+                                "displayGroup": "protocol.httptransportgroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [
+                                    {
+                                        "value": "ServerCertificate",
+                                        "displayValue": "ServerCertificate"
+                                    },
+                                    {
+                                        "value": "TrustStore",
+                                        "displayValue": "TrustStore"
+                                    },
+                                    {
+                                        "value": "None",
+                                        "displayValue": "None"
+                                    }
+                                ],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "TrustStore"
+                            },
+                            {
+                                "name": "ClientAuthRequired",
+                                "maxLimit": null,
+                                "displayName": "protocol.httptransportgroup.clientauthrequired.name",
+                                "type": "enum",
+                                "displayDescription": "protocol.httptransportgroup.clientauthrequired.doc",
+                                "group": "HttpTransportGroup",
+                                "displayGroup": "protocol.httptransportgroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [
+                                    {
+                                        "value": "None",
+                                        "displayValue": "None"
+                                    },
+                                    {
+                                        "value": "ClientCertificate",
+                                        "displayValue": "ClientCertificate"
+                                    },
+                                    {
+                                        "value": "BasicAuthentication",
+                                        "displayValue": "BasicAuthentication"
+                                    }
+                                ],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "None"
+                            },
+                            {
+                                "name": "PrivateKeyIdentity",
+                                "maxLimit": null,
+                                "displayName": "protocol.httptransportgroup.privatekeyidentity.name",
+                                "type": "string",
+                                "displayDescription": "protocol.httptransportgroup.privatekeyidentity.doc",
+                                "group": "HttpTransportGroup",
+                                "displayGroup": "protocol.httptransportgroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "EnableGetForBasicAuth",
+                                "maxLimit": null,
+                                "displayName": "protocol.httptransportgroup.enablegetforbasicauth.name",
+                                "type": "boolean",
+                                "displayDescription": "protocol.httptransportgroup.enablegetforbasicauth.doc",
+                                "group": "HttpTransportGroup",
+                                "displayGroup": "protocol.httptransportgroup.name",
+                                "displayEnabled": false,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "true"
+                            },
+                            {
+                                "name": "Username",
+                                "maxLimit": null,
+                                "displayName": "protocol.httptransportgroup.username.name",
+                                "type": "string",
+                                "displayDescription": "protocol.httptransportgroup.username.doc",
+                                "group": "HttpTransportGroup",
+                                "displayGroup": "protocol.httptransportgroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "Password",
+                                "maxLimit": null,
+                                "displayName": "protocol.httptransportgroup.password.name",
+                                "type": "password",
+                                "displayDescription": "protocol.httptransportgroup.password.doc",
+                                "group": "HttpTransportGroup",
+                                "displayGroup": "protocol.httptransportgroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "Synchronous",
+                                "maxLimit": null,
+                                "displayName": "protocol.httptransportgroup.synchronous.name",
+                                "type": "boolean",
+                                "displayDescription": "protocol.httptransportgroup.synchronous.doc",
+                                "group": "HttpTransportGroup",
+                                "displayGroup": "protocol.httptransportgroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "false"
+                            },
+                            {
+                                "name": "SecureTransportRequired",
+                                "maxLimit": null,
+                                "displayName": "protocol.httptransportgroup.securetransportrequired.name",
+                                "type": "boolean",
+                                "displayDescription": "protocol.httptransportgroup.securetransportrequired.doc",
+                                "group": "HttpTransportGroup",
+                                "displayGroup": "protocol.httptransportgroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "true"
+                            },
+                            {
+                                "name": "AuthenticatedConnectionRequired",
+                                "maxLimit": null,
+                                "displayName": "protocol.httptransportgroup.authenticatedconnectionrequired.name",
+                                "type": "boolean",
+                                "displayDescription": "protocol.httptransportgroup.authenticatedconnectionrequired.doc",
+                                "group": "HttpTransportGroup",
+                                "displayGroup": "protocol.httptransportgroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "true"
+                            },
+                            {
+                                "name": "AuthIPAddressRange",
+                                "maxLimit": null,
+                                "displayName": "protocol.httptransportgroup.authipaddressrange.name",
+                                "type": "string",
+                                "displayDescription": "protocol.httptransportgroup.authipaddressrange.doc",
+                                "group": "HttpTransportGroup",
+                                "displayGroup": "protocol.httptransportgroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "ConnectionDebugEnabled",
+                                "maxLimit": null,
+                                "displayName": "protocol.httptransportgroup.connectiondebugenabled.name",
+                                "type": "boolean",
+                                "displayDescription": "protocol.httptransportgroup.connectiondebugenabled.doc",
+                                "group": "HttpTransportGroup",
+                                "displayGroup": "protocol.httptransportgroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "false"
+                            },
+                            {
+                                "name": "IgnoreHttpCookies",
+                                "maxLimit": null,
+                                "displayName": "protocol.httptransportgroup.ignorehttpcookies.name",
+                                "type": "boolean",
+                                "displayDescription": "protocol.httptransportgroup.ignorehttpcookies.doc",
+                                "group": "HttpTransportGroup",
+                                "displayGroup": "protocol.httptransportgroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "false"
+                            },
+                            {
+                                "name": "TLSClientProtocols",
+                                "maxLimit": null,
+                                "displayName": "protocol.httptransportgroup.tlsclientprotocols.name",
+                                "type": "string",
+                                "displayDescription": "protocol.httptransportgroup.tlsclientprotocols.doc",
+                                "group": "HttpTransportGroup",
+                                "displayGroup": "protocol.httptransportgroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "TLSClientCiphers",
+                                "maxLimit": null,
+                                "displayName": "protocol.httptransportgroup.tlsclientciphers.name",
+                                "type": "string",
+                                "displayDescription": "protocol.httptransportgroup.tlsclientciphers.doc",
+                                "group": "HttpTransportGroup",
+                                "displayGroup": "protocol.httptransportgroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "TLSClientRenegotiation",
+                                "maxLimit": null,
+                                "displayName": "protocol.httptransportgroup.tlsclientrenegotiation.name",
+                                "type": "boolean",
+                                "displayDescription": "protocol.httptransportgroup.tlsclientrenegotiation.doc",
+                                "group": "HttpTransportGroup",
+                                "displayGroup": "protocol.httptransportgroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "true"
+                            },
+                            {
+                                "name": "CertificateHandlerClass",
+                                "maxLimit": null,
+                                "displayName": "protocol.httptransportgroup.certificatehandlerclass.name",
+                                "type": "string",
+                                "displayDescription": "protocol.httptransportgroup.certificatehandlerclass.doc",
+                                "group": "HttpTransportGroup",
+                                "displayGroup": "protocol.httptransportgroup.name",
+                                "displayEnabled": false,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "TransportRetryInterval",
+                                "maxLimit": null,
+                                "displayName": "protocol.transportretrygroup.transportretryinterval.name",
+                                "type": "string",
+                                "displayDescription": "protocol.transportretrygroup.transportretryinterval.doc",
+                                "group": "TransportRetryGroup",
+                                "displayGroup": "protocol.transportretrygroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "00:05:00.00"
+                            },
+                            {
+                                "name": "TransportRetryLimit",
+                                "maxLimit": null,
+                                "displayName": "protocol.transportretrygroup.transportretrylimit.name",
+                                "type": "string",
+                                "displayDescription": "The number of times to retry due to not receiving a HTTP 200 response from trading partner web server.",
+                                "group": "TransportRetryGroup",
+                                "displayGroup": "protocol.transportretrygroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "2"
+                            },
+                            {
+                                "name": "PartnerProfileDuns",
+                                "maxLimit": null,
+                                "displayName": "protocol.messageprocessinggroup.partnerprofileduns.name",
+                                "type": "string",
+                                "displayDescription": "protocol.messageprocessinggroup.partnerprofileduns.doc",
+                                "group": "MessageProcessingGroup",
+                                "displayGroup": "protocol.messageprocessinggroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "GatewayProfileDuns",
+                                "maxLimit": null,
+                                "displayName": "protocol.messageprocessinggroup.gatewayprofileduns.name",
+                                "type": "string",
+                                "displayDescription": "protocol.messageprocessinggroup.gatewayprofileduns.doc",
+                                "group": "MessageProcessingGroup",
+                                "displayGroup": "protocol.messageprocessinggroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "Timezone",
+                                "maxLimit": null,
+                                "displayName": "protocol.messageprocessinggroup.timezone.name",
+                                "type": "string",
+                                "displayDescription": "protocol.messageprocessinggroup.timezone.doc",
+                                "group": "MessageProcessingGroup",
+                                "displayGroup": "protocol.messageprocessinggroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "Charset",
+                                "maxLimit": null,
+                                "displayName": "protocol.messageprocessinggroup.charset.name",
+                                "type": "string",
+                                "displayDescription": "protocol.messageprocessinggroup.charset.doc",
+                                "group": "MessageProcessingGroup",
+                                "displayGroup": "protocol.messageprocessinggroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "MessageProcessing",
+                                "maxLimit": null,
+                                "displayName": "protocol.messageprocessinggroup.messageprocessing.name",
+                                "type": "enum",
+                                "displayDescription": "protocol.messageprocessinggroup.messageprocessing.doc",
+                                "group": "MessageProcessingGroup",
+                                "displayGroup": "protocol.messageprocessinggroup.name",
+                                "displayEnabled": false,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [
+                                    {
+                                        "value": "SyncOutboundSubmission",
+                                        "displayValue": "SyncOutboundSubmission"
+                                    },
+                                    {
+                                        "value": "SynchSubmission",
+                                        "displayValue": "SynchSubmission"
+                                    },
+                                    {
+                                        "value": "SynchProcessing",
+                                        "displayValue": "SynchProcessing"
+                                    },
+                                    {
+                                        "value": "AsyncProcessing",
+                                        "displayValue": "AsyncProcessing"
+                                    },
+                                    {
+                                        "value": "SyncInboundSubmission",
+                                        "displayValue": "SyncInboundSubmission"
+                                    }
+                                ],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "AsyncProcessing"
+                            },
+                            {
+                                "name": "MessageParserClass",
+                                "maxLimit": null,
+                                "displayName": "protocol.messageprocessinggroup.messageparserclass.name",
+                                "type": "string",
+                                "displayDescription": "protocol.messageprocessinggroup.messageparserclass.doc",
+                                "group": "MessageProcessingGroup",
+                                "displayGroup": "protocol.messageprocessinggroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "VirusScanEnabled",
+                                "maxLimit": null,
+                                "displayName": "protocol.messageprocessinggroup.virusscanenabled.name",
+                                "type": "boolean",
+                                "displayDescription": "protocol.messageprocessinggroup.virusscanenabled.doc",
+                                "group": "MessageProcessingGroup",
+                                "displayGroup": "protocol.messageprocessinggroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "false"
+                            },
+                            {
+                                "name": "MaximumTransformFileSize",
+                                "maxLimit": "20480",
+                                "displayName": "protocol.messageprocessinggroup.transform.file.size",
+                                "type": "nonnegativeinteger",
+                                "displayDescription": "protocol.messageprocessinggroup.transform.file.size.desc",
+                                "group": "MessageProcessingGroup",
+                                "displayGroup": "protocol.messageprocessinggroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "20480"
+                            },
+                            {
+                                "name": "ReceiverDataSourceProps",
+                                "maxLimit": null,
+                                "displayName": "protocol.xmlpackaginggroup.receiverdatasourceprops.name",
+                                "type": "string",
+                                "displayDescription": "protocol.xmlpackaginggroup.receiverdatasourceprops.doc",
+                                "group": "XMLPackagingGroup",
+                                "displayGroup": "protocol.xmlpackaginggroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "ReceiverXMLMappingProps",
+                                "maxLimit": null,
+                                "displayName": "protocol.xmlpackaginggroup.receiverxmlmappingprops.name",
+                                "type": "string",
+                                "displayDescription": "protocol.xmlpackaginggroup.receiverxmlmappingprops.doc",
+                                "group": "XMLPackagingGroup",
+                                "displayGroup": "protocol.xmlpackaginggroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "SenderXMLMappingProps",
+                                "maxLimit": null,
+                                "displayName": "protocol.xmlpackaginggroup.senderxmlmappingprops.name",
+                                "type": "string",
+                                "displayDescription": "protocol.xmlpackaginggroup.senderxmlmappingprops.doc",
+                                "group": "XMLPackagingGroup",
+                                "displayGroup": "protocol.xmlpackaginggroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "SendXMLTemplate",
+                                "maxLimit": null,
+                                "displayName": "protocol.xmlpackaginggroup.sendxmltemplate.name",
+                                "type": "string",
+                                "displayDescription": "protocol.xmlpackaginggroup.sendxmltemplate.doc",
+                                "group": "XMLPackagingGroup",
+                                "displayGroup": "protocol.xmlpackaginggroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "SendEnvelopeTemplate",
+                                "maxLimit": null,
+                                "displayName": "protocol.xmlpackaginggroup.sendenvelopetemplate.name",
+                                "type": "string",
+                                "displayDescription": "protocol.xmlpackaginggroup.sendenvelopetemplate.doc",
+                                "group": "XMLPackagingGroup",
+                                "displayGroup": "protocol.xmlpackaginggroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "DigitalSignatureRequired",
+                                "maxLimit": null,
+                                "displayName": "protocol.digitalsignaturegroup.digitalsignaturerequired.name",
+                                "type": "boolean",
+                                "displayDescription": "protocol.digitalsignaturegroup.digitalsignaturerequired.doc",
+                                "group": "DigitalSignatureGroup",
+                                "displayGroup": "protocol.digitalsignaturegroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "true"
+                            },
+                            {
+                                "name": "AckDigitalSignatureRequired",
+                                "maxLimit": null,
+                                "displayName": "protocol.digitalsignaturegroup.ackdigitalsignaturerequired.name",
+                                "type": "boolean",
+                                "displayDescription": "protocol.digitalsignaturegroup.ackdigitalsignaturerequired.doc",
+                                "group": "DigitalSignatureGroup",
+                                "displayGroup": "protocol.digitalsignaturegroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "true"
+                            },
+                            {
+                                "name": "DigitalSignatureRequiredCheck",
+                                "maxLimit": null,
+                                "displayName": "protocol.digitalsignaturegroup.digitalsignaturerequiredcheck.name",
+                                "type": "boolean",
+                                "displayDescription": "protocol.digitalsignaturegroup.digitalsignaturerequiredcheck.doc",
+                                "group": "DigitalSignatureGroup",
+                                "displayGroup": "protocol.digitalsignaturegroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "true"
+                            },
+                            {
+                                "name": "DigSigHashAlgo",
+                                "maxLimit": null,
+                                "displayName": "protocol.digitalsignaturegroup.digsighashalgo.name",
+                                "type": "enum",
+                                "displayDescription": "protocol.digitalsignaturegroup.digsighashalgo.doc",
+                                "group": "DigitalSignatureGroup",
+                                "displayGroup": "protocol.digitalsignaturegroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [
+                                    {
+                                        "value": "RIPEMD160",
+                                        "displayValue": "RIPEMD160"
+                                    },
+                                    {
+                                        "value": "RIPEMD128",
+                                        "displayValue": "RIPEMD128"
+                                    },
+                                    {
+                                        "value": "RIPEMD256",
+                                        "displayValue": "RIPEMD256"
+                                    },
+                                    {
+                                        "value": "MD5",
+                                        "displayValue": "MD5"
+                                    },
+                                    {
+                                        "value": "SHA512",
+                                        "displayValue": "SHA512"
+                                    },
+                                    {
+                                        "value": "GOST3411",
+                                        "displayValue": "GOST3411"
+                                    },
+                                    {
+                                        "value": "SHA256",
+                                        "displayValue": "SHA256"
+                                    },
+                                    {
+                                        "value": "SHA1",
+                                        "displayValue": "SHA1"
+                                    },
+                                    {
+                                        "value": "SHA224",
+                                        "displayValue": "SHA224"
+                                    },
+                                    {
+                                        "value": "SHA384",
+                                        "displayValue": "SHA384"
+                                    }
+                                ],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "SHA256"
+                            },
+                            {
+                                "name": "AckDigSigHashAlgo",
+                                "maxLimit": null,
+                                "displayName": "protocol.digitalsignaturegroup.ackdigsighashalgo.name",
+                                "type": "enum",
+                                "displayDescription": "protocol.digitalsignaturegroup.ackdigsighashalgo.doc",
+                                "group": "DigitalSignatureGroup",
+                                "displayGroup": "protocol.digitalsignaturegroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [
+                                    {
+                                        "value": "RIPEMD128",
+                                        "displayValue": "RIPEMD128"
+                                    },
+                                    {
+                                        "value": "MD5",
+                                        "displayValue": "MD5"
+                                    },
+                                    {
+                                        "value": "SHA384",
+                                        "displayValue": "SHA384"
+                                    },
+                                    {
+                                        "value": "SHA512",
+                                        "displayValue": "SHA512"
+                                    },
+                                    {
+                                        "value": "SHA1",
+                                        "displayValue": "SHA1"
+                                    },
+                                    {
+                                        "value": "GOST3411",
+                                        "displayValue": "GOST3411"
+                                    },
+                                    {
+                                        "value": "RIPEMD160",
+                                        "displayValue": "RIPEMD160"
+                                    },
+                                    {
+                                        "value": "SHA256",
+                                        "displayValue": "SHA256"
+                                    },
+                                    {
+                                        "value": "SHA224",
+                                        "displayValue": "SHA224"
+                                    },
+                                    {
+                                        "value": "RIPEMD256",
+                                        "displayValue": "RIPEMD256"
+                                    }
+                                ],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "SHA256"
+                            },
+                            {
+                                "name": "SignedMIMEVersion",
+                                "maxLimit": null,
+                                "displayName": "protocol.digitalsignaturegroup.signedmimeversion.name",
+                                "type": "enum",
+                                "displayDescription": "protocol.digitalsignaturegroup.signedmimeversion.doc",
+                                "group": "DigitalSignatureGroup",
+                                "displayGroup": "protocol.digitalsignaturegroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [
+                                    {
+                                        "value": "S/MIME v3.1",
+                                        "displayValue": "S/MIME v3.1"
+                                    },
+                                    {
+                                        "value": "S/MIME v3.2",
+                                        "displayValue": "S/MIME v3.2"
+                                    }
+                                ],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "S/MIME v3.2"
+                            },
+                            {
+                                "name": "CMSAlgorithmProtect",
+                                "maxLimit": null,
+                                "displayName": "protocol.digitalsignaturegroup.cmsalgorithmprotect.name",
+                                "type": "boolean",
+                                "displayDescription": "protocol.digitalsignaturegroup.cmsalgorithmprotect.doc",
+                                "group": "DigitalSignatureGroup",
+                                "displayGroup": "protocol.digitalsignaturegroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "true"
+                            },
+                            {
+                                "name": "IncompleteTransactionAlertIntervals",
+                                "maxLimit": null,
+                                "displayName": "protocol.incompletetransactionalertgroup.incompletetransactionalertintervals.name",
+                                "type": "string",
+                                "displayDescription": "protocol.incompletetransactionalertgroup.incompletetransactionalertintervals.doc",
+                                "group": "IncompleteTransactionAlertGroup",
+                                "displayGroup": "protocol.incompletetransactionalertgroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [
+                                    {
+                                        "value": "Any",
+                                        "displayValue": "e2na.any"
+                                    }
+                                ],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "IncompleteTransactionTimeout",
+                                "maxLimit": null,
+                                "displayName": "protocol.incompletetransactionalertgroup.incompletetransactiontimeout.name",
+                                "type": "string",
+                                "displayDescription": "protocol.incompletetransactionalertgroup.incompletetransactiontimeout.doc",
+                                "group": "IncompleteTransactionAlertGroup",
+                                "displayGroup": "protocol.incompletetransactionalertgroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [
+                                    {
+                                        "value": "Any",
+                                        "displayValue": "e2na.any"
+                                    }
+                                ],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "e2net.msg.seq.generation.type",
+                                "maxLimit": null,
+                                "displayName": "protocol.messagesequencegroup.msg.seq.generation.name",
+                                "type": "enum",
+                                "displayDescription": "protocol.messagesequencegroup.msg.seq.generation.doc",
+                                "group": "MessageSequenceGroup",
+                                "displayGroup": "protocol.messagesequencegroup.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [
+                                    {
+                                        "value": "Disabled",
+                                        "displayValue": "Disabled"
+                                    },
+                                    {
+                                        "value": "E2netGenerated",
+                                        "displayValue": "E2netGenerated"
+                                    }
+                                ],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "Disabled"
+                            },
+                            {
+                                "name": "Id",
+                                "maxLimit": null,
+                                "displayName": "Id",
+                                "type": "string",
+                                "displayDescription": null,
+                                "group": "RESTGroup",
+                                "displayGroup": "rest.group.name",
+                                "displayEnabled": true,
+                                "readOnly": true,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "rest"
+                            },
+                            {
+                                "name": "ProtocolCode",
+                                "maxLimit": null,
+                                "displayName": "ProtocolCode",
+                                "type": "string",
+                                "displayDescription": null,
+                                "group": "RESTGroup",
+                                "displayGroup": "rest.group.name",
+                                "displayEnabled": false,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "REST"
+                            },
+                            {
+                                "name": "ProtocolVersion",
+                                "maxLimit": null,
+                                "displayName": "ProtocolVersion",
+                                "type": "string",
+                                "displayDescription": null,
+                                "group": "RESTGroup",
+                                "displayGroup": "rest.group.name",
+                                "displayEnabled": false,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "1.0"
+                            },
+                            {
+                                "name": "WaitForAcknowledgement",
+                                "maxLimit": null,
+                                "displayName": "protocol.http.waitforacknowledgement.name",
+                                "type": "boolean",
+                                "displayDescription": "protocol.http.waitforacknowledgement.doc",
+                                "group": "RESTGroup",
+                                "displayGroup": "rest.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "true"
+                            },
+                            {
+                                "name": "CustomAcknowledgmentRequired",
+                                "maxLimit": null,
+                                "displayName": "Custom Ack Required",
+                                "type": "boolean",
+                                "displayDescription": "Defines if Custom Ack needs to be generated in response to any      Inbound call using this protocol. Takes only true/false value. Default is false. If false, then default XML ack is generated.      If true, then template must be defined using CustomAcknowledgmentTemplate.",
+                                "group": "RESTGroup",
+                                "displayGroup": "rest.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "false"
+                            },
+                            {
+                                "name": "CustomAcknowledgmentTemplate",
+                                "maxLimit": null,
+                                "displayName": "Custom Ack Template",
+                                "type": "string",
+                                "displayDescription": "Support file name added in the connection defining the template for custom acknowledgment generation.       Template should define actual ack format i.e. actual XML or JSON to be generated with any data source variable names from which       values to be replaced in the generated ack using the $ for variable names from the data source.",
+                                "group": "RESTGroup",
+                                "displayGroup": "rest.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "SendAcknowledgment",
+                                "maxLimit": null,
+                                "displayName": "Send Acknowledgement",
+                                "type": "boolean",
+                                "displayDescription": "To disable the sending of Tech Ack to Partners who cannot consume it. Default is to send the Ack.",
+                                "group": "RESTGroup",
+                                "displayGroup": "rest.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "true"
+                            },
+                            {
+                                "name": "OutboundMethodType",
+                                "maxLimit": null,
+                                "displayName": "HTTP Method Type",
+                                "type": "enum",
+                                "displayDescription": "Indicates the type of HTTP method to use when sending documents to partners.",
+                                "group": "RESTGroup",
+                                "displayGroup": "rest.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [
+                                    {
+                                        "value": "POST",
+                                        "displayValue": "POST"
+                                    },
+                                    {
+                                        "value": "PUT",
+                                        "displayValue": "PUT"
+                                    }
+                                ],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": "POST"
+                            },
+                            {
+                                "name": "InboundHeaderAndLookupProps",
+                                "maxLimit": null,
+                                "displayName": "protocol.inboundheaderandlookupprops.name",
+                                "type": "enum",
+                                "displayDescription": "protocol.inboundheaderandlookupprops.doc",
+                                "group": "RESTGroup",
+                                "displayGroup": "rest.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": "supportfiles",
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "OutboundHeaderAndLookupProps",
+                                "maxLimit": null,
+                                "displayName": "protocol.outboundheaderandlookupprops.name",
+                                "type": "enum",
+                                "displayDescription": "protocol.outboundheaderandlookupprops.doc",
+                                "group": "RESTGroup",
+                                "displayGroup": "rest.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": "supportfiles",
+                                "enumeration": [],
+                                "attributes": [],
+                                "handlerClass": null,
+                                "default": null
+                            },
+                            {
+                                "name": "FileEncoding",
+                                "maxLimit": null,
+                                "displayName": "protocol.fileencoding.name",
+                                "type": "enum",
+                                "displayDescription": "protocol.fileencoding.doc",
+                                "group": "RESTGroup",
+                                "displayGroup": "rest.group.name",
+                                "displayEnabled": true,
+                                "readOnly": false,
+                                "dataProvider": null,
+                                "enumeration": [
+                                    {
+                                        "value": "ZLIB+MIME",
+                                        "displayValue": "ZLIB/MIME"
+                                    },
+                                    {
+                                        "value": "MIME",
+                                        "displayValue": "MIME"
+                                    },
+                                    {
+                                        "value": "ZLIB",
+                                        "displayValue": "ZLIB/No Mime"
+                                    },
+                                    {
+                                        "value": "ConditionalZip",
+                                        "displayValue": "ConditionalZip"
+                                    },
+                                    {
+                                        "value": "Zip",
+                                        "displayValue": "Zip"
+                                    },
+                                    {
+                                        "value": "None",
+                                        "displayValue": "None"
+                                    },
+                                    {
+                                        "value": "GZIP+MIME",
+                                        "displayValue": "GZIP/MIME"
+                                    },
+                                    {
+                                        "value": "GZIP",
+                                        "displayValue": "GZIP/No Mime"
+                                    }
+                                ],
+                                "attributes": [
+                                    {
+                                        "value": "Any",
+                                        "displayValue": "e2na.any"
+                                    }
+                                ],
+                                "handlerClass": null,
+                                "default": "None"
+                            }
+                        ],
+                        "propertyFormat": "PERSISTENCE",
+                        "propertyEntries": [
+                            {
+                                "name": "TransportRetryLimit",
+                                "value": "2",
+                                "attributes": {},
+                                "rank": 0,
+                                "group": null
+                            },
+                            {
+                                "name": "ServerAuthRequired",
+                                "value": "ServerCertificate",
+                                "attributes": {},
+                                "rank": 0,
+                                "group": null
+                            },
+                            {
+                                "name": "AuthenticatedConnectionRequired",
+                                "value": "true",
+                                "attributes": {},
+                                "rank": 0,
+                                "group": null
+                            },
+                            {
+                                "name": "ProtocolVersion",
+                                "value": "1.0",
+                                "attributes": {},
+                                "rank": 0,
+                                "group": null
+                            },
+                            {
+                                "name": "URL",
+                                "value": "",
+                                "attributes": {},
+                                "rank": 0,
+                                "group": null
+                            },
+                            {
+                                "name": "TransportRetryInterval",
+                                "value": "00:05:00.00",
+                                "attributes": {},
+                                "rank": 0,
+                                "group": null
+                            },
+                            {
+                                "name": "GatewayProfileDuns",
+                                "value": "",
+                                "attributes": {},
+                                "rank": 0,
+                                "group": null
+                            },
+                            {
+                                "name": "CMSAlgorithmProtect",
+                                "value": "true",
+                                "attributes": {},
+                                "rank": 0,
+                                "group": null
+                            },
+                            {
+                                "name": "ProtocolCode",
+                                "value": "REST",
+                                "attributes": {},
+                                "rank": 0,
+                                "group": null
+                            },
+                            {
+                                "name": "FileEncoding",
+                                "value": "ConditionalZip",
+                                "attributes": {},
+                                "rank": 0,
+                                "group": null
+                            },
+                            {
+                                "name": "ClientAuthRequired",
+                                "value": "None",
+                                "attributes": {},
+                                "rank": 0,
+                                "group": null
+                            },
+                            {
+                                "name": "Id",
+                                "value": "rest",
+                                "attributes": {},
+                                "rank": 0,
+                                "group": null
+                            },
+                            {
+                                "name": "AuthIPAddressRange",
+                                "value": "",
+                                "attributes": {},
+                                "rank": 0,
+                                "group": null
+                            },
+                            {
+                                "name": "TransferEncoding",
+                                "value": "binary",
+                                "attributes": {},
+                                "rank": 0,
+                                "group": null
+                            },
+                            {
+                                "name": "PartnerProfileDuns",
+                                "value": "",
+                                "attributes": {},
+                                "rank": 0,
+                                "group": null
+                            }
+                        ]
+                    },
+                    "encodedData": "",
+                    "versionedId": "2249::15"
+                }
+            ],
+            "protocolExtendedProperties": {
+                "propertyDefinitions": [
+                    {
+                        "name": "ReceiverHeaderProps",
+                        "maxLimit": null,
+                        "displayName": "protocol.httpheadergroup.receiverheaderprops.name",
+                        "type": "string",
+                        "displayDescription": "protocol.httpheadergroup.receiverheaderprops.do/c",
+                        "group": "HttpHeaderGroup",
+                        "displayGroup": "protocol.httpheadergroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "SenderHeaderProps",
+                        "maxLimit": null,
+                        "displayName": "protocol.httpheadergroup.senderheaderprops.name",
+                        "type": "string",
+                        "displayDescription": "protocol.httpheadergroup.senderheaderprops.doc",
+                        "group": "HttpHeaderGroup",
+                        "displayGroup": "protocol.httpheadergroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "StatusResponseCodeProps",
+                        "maxLimit": null,
+                        "displayName": "protocol.httpheadergroup.statusresponsecodeprops.name",
+                        "type": "string",
+                        "displayDescription": "protocol.httpheadergroup.statusresponsecodeprops.doc",
+                        "group": "HttpHeaderGroup",
+                        "displayGroup": "protocol.httpheadergroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "TransportEncoding",
+                        "maxLimit": null,
+                        "displayName": "protocol.httptransportgroup.transportencoding.name",
+                        "type": "enum",
+                        "displayDescription": "protocol.httptransportgroup.transportencoding.doc",
+                        "group": "HttpTransportGroup",
+                        "displayGroup": "protocol.httptransportgroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [
+                            {
+                                "value": "NONE",
+                                "displayValue": "NONE"
+                            },
+                            {
+                                "value": "CHUNKED",
+                                "displayValue": "CHUNKED"
+                            }
+                        ],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "NONE"
+                    },
+                    {
+                        "name": "TransferEncoding",
+                        "maxLimit": null,
+                        "displayName": "protocol.httptransportgroup.transferencoding.name",
+                        "type": "enum",
+                        "displayDescription": "protocol.httptransportgroup.transferencoding.doc",
+                        "group": "HttpTransportGroup",
+                        "displayGroup": "protocol.httptransportgroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [
+                            {
+                                "value": "quoted-printable",
+                                "displayValue": "quoted-printable"
+                            },
+                            {
+                                "value": "binary",
+                                "displayValue": "binary"
+                            },
+                            {
+                                "value": "base64",
+                                "displayValue": "base64"
+                            }
+                        ],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "URL",
+                        "maxLimit": null,
+                        "displayName": "protocol.httptransportgroup.url.name",
+                        "type": "anyURI",
+                        "displayDescription": "protocol.httptransportgroup.url.doc",
+                        "group": "HttpTransportGroup",
+                        "displayGroup": "protocol.httptransportgroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "AckURL",
+                        "maxLimit": null,
+                        "displayName": "protocol.httptransportgroup.ackurl.name",
+                        "type": "anyURI",
+                        "displayDescription": "protocol.httptransportgroup.ackurl.doc",
+                        "group": "HttpTransportGroup",
+                        "displayGroup": "protocol.httptransportgroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "ServerAuthRequired",
+                        "maxLimit": null,
+                        "displayName": "protocol.httptransportgroup.serverauthrequired.name",
+                        "type": "enum",
+                        "displayDescription": "protocol.httptransportgroup.serverauthrequired.doc",
+                        "group": "HttpTransportGroup",
+                        "displayGroup": "protocol.httptransportgroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [
+                            {
+                                "value": "ServerCertificate",
+                                "displayValue": "ServerCertificate"
+                            },
+                            {
+                                "value": "TrustStore",
+                                "displayValue": "TrustStore"
+                            },
+                            {
+                                "value": "None",
+                                "displayValue": "None"
+                            }
+                        ],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "TrustStore"
+                    },
+                    {
+                        "name": "ClientAuthRequired",
+                        "maxLimit": null,
+                        "displayName": "protocol.httptransportgroup.clientauthrequired.name",
+                        "type": "enum",
+                        "displayDescription": "protocol.httptransportgroup.clientauthrequired.doc",
+                        "group": "HttpTransportGroup",
+                        "displayGroup": "protocol.httptransportgroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [
+                            {
+                                "value": "None",
+                                "displayValue": "None"
+                            },
+                            {
+                                "value": "ClientCertificate",
+                                "displayValue": "ClientCertificate"
+                            },
+                            {
+                                "value": "BasicAuthentication",
+                                "displayValue": "BasicAuthentication"
+                            }
+                        ],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "None"
+                    },
+                    {
+                        "name": "PrivateKeyIdentity",
+                        "maxLimit": null,
+                        "displayName": "protocol.httptransportgroup.privatekeyidentity.name",
+                        "type": "string",
+                        "displayDescription": "protocol.httptransportgroup.privatekeyidentity.doc",
+                        "group": "HttpTransportGroup",
+                        "displayGroup": "protocol.httptransportgroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "EnableGetForBasicAuth",
+                        "maxLimit": null,
+                        "displayName": "protocol.httptransportgroup.enablegetforbasicauth.name",
+                        "type": "boolean",
+                        "displayDescription": "protocol.httptransportgroup.enablegetforbasicauth.doc",
+                        "group": "HttpTransportGroup",
+                        "displayGroup": "protocol.httptransportgroup.name",
+                        "displayEnabled": false,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "true"
+                    },
+                    {
+                        "name": "Username",
+                        "maxLimit": null,
+                        "displayName": "protocol.httptransportgroup.username.name",
+                        "type": "string",
+                        "displayDescription": "protocol.httptransportgroup.username.doc",
+                        "group": "HttpTransportGroup",
+                        "displayGroup": "protocol.httptransportgroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "Password",
+                        "maxLimit": null,
+                        "displayName": "protocol.httptransportgroup.password.name",
+                        "type": "password",
+                        "displayDescription": "protocol.httptransportgroup.password.doc",
+                        "group": "HttpTransportGroup",
+                        "displayGroup": "protocol.httptransportgroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "Synchronous",
+                        "maxLimit": null,
+                        "displayName": "protocol.httptransportgroup.synchronous.name",
+                        "type": "boolean",
+                        "displayDescription": "protocol.httptransportgroup.synchronous.doc",
+                        "group": "HttpTransportGroup",
+                        "displayGroup": "protocol.httptransportgroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "false"
+                    },
+                    {
+                        "name": "SecureTransportRequired",
+                        "maxLimit": null,
+                        "displayName": "protocol.httptransportgroup.securetransportrequired.name",
+                        "type": "boolean",
+                        "displayDescription": "protocol.httptransportgroup.securetransportrequired.doc",
+                        "group": "HttpTransportGroup",
+                        "displayGroup": "protocol.httptransportgroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "true"
+                    },
+                    {
+                        "name": "AuthenticatedConnectionRequired",
+                        "maxLimit": null,
+                        "displayName": "protocol.httptransportgroup.authenticatedconnectionrequired.name",
+                        "type": "boolean",
+                        "displayDescription": "protocol.httptransportgroup.authenticatedconnectionrequired.doc",
+                        "group": "HttpTransportGroup",
+                        "displayGroup": "protocol.httptransportgroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "true"
+                    },
+                    {
+                        "name": "AuthIPAddressRange",
+                        "maxLimit": null,
+                        "displayName": "protocol.httptransportgroup.authipaddressrange.name",
+                        "type": "string",
+                        "displayDescription": "protocol.httptransportgroup.authipaddressrange.doc",
+                        "group": "HttpTransportGroup",
+                        "displayGroup": "protocol.httptransportgroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "ConnectionDebugEnabled",
+                        "maxLimit": null,
+                        "displayName": "protocol.httptransportgroup.connectiondebugenabled.name",
+                        "type": "boolean",
+                        "displayDescription": "protocol.httptransportgroup.connectiondebugenabled.doc",
+                        "group": "HttpTransportGroup",
+                        "displayGroup": "protocol.httptransportgroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "false"
+                    },
+                    {
+                        "name": "IgnoreHttpCookies",
+                        "maxLimit": null,
+                        "displayName": "protocol.httptransportgroup.ignorehttpcookies.name",
+                        "type": "boolean",
+                        "displayDescription": "protocol.httptransportgroup.ignorehttpcookies.doc",
+                        "group": "HttpTransportGroup",
+                        "displayGroup": "protocol.httptransportgroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "false"
+                    },
+                    {
+                        "name": "TLSClientProtocols",
+                        "maxLimit": null,
+                        "displayName": "protocol.httptransportgroup.tlsclientprotocols.name",
+                        "type": "string",
+                        "displayDescription": "protocol.httptransportgroup.tlsclientprotocols.doc",
+                        "group": "HttpTransportGroup",
+                        "displayGroup": "protocol.httptransportgroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "TLSClientCiphers",
+                        "maxLimit": null,
+                        "displayName": "protocol.httptransportgroup.tlsclientciphers.name",
+                        "type": "string",
+                        "displayDescription": "protocol.httptransportgroup.tlsclientciphers.doc",
+                        "group": "HttpTransportGroup",
+                        "displayGroup": "protocol.httptransportgroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "TLSClientRenegotiation",
+                        "maxLimit": null,
+                        "displayName": "protocol.httptransportgroup.tlsclientrenegotiation.name",
+                        "type": "boolean",
+                        "displayDescription": "protocol.httptransportgroup.tlsclientrenegotiation.doc",
+                        "group": "HttpTransportGroup",
+                        "displayGroup": "protocol.httptransportgroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "true"
+                    },
+                    {
+                        "name": "CertificateHandlerClass",
+                        "maxLimit": null,
+                        "displayName": "protocol.httptransportgroup.certificatehandlerclass.name",
+                        "type": "string",
+                        "displayDescription": "protocol.httptransportgroup.certificatehandlerclass.doc",
+                        "group": "HttpTransportGroup",
+                        "displayGroup": "protocol.httptransportgroup.name",
+                        "displayEnabled": false,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "TransportRetryInterval",
+                        "maxLimit": null,
+                        "displayName": "protocol.transportretrygroup.transportretryinterval.name",
+                        "type": "string",
+                        "displayDescription": "protocol.transportretrygroup.transportretryinterval.doc",
+                        "group": "TransportRetryGroup",
+                        "displayGroup": "protocol.transportretrygroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "00:05:00.00"
+                    },
+                    {
+                        "name": "TransportRetryLimit",
+                        "maxLimit": null,
+                        "displayName": "protocol.transportretrygroup.transportretrylimit.name",
+                        "type": "string",
+                        "displayDescription": "The number of times to retry due to not receiving a HTTP 200 response from trading partner web server.",
+                        "group": "TransportRetryGroup",
+                        "displayGroup": "protocol.transportretrygroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "2"
+                    },
+                    {
+                        "name": "PartnerProfileDuns",
+                        "maxLimit": null,
+                        "displayName": "protocol.messageprocessinggroup.partnerprofileduns.name",
+                        "type": "string",
+                        "displayDescription": "protocol.messageprocessinggroup.partnerprofileduns.doc",
+                        "group": "MessageProcessingGroup",
+                        "displayGroup": "protocol.messageprocessinggroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "GatewayProfileDuns",
+                        "maxLimit": null,
+                        "displayName": "protocol.messageprocessinggroup.gatewayprofileduns.name",
+                        "type": "string",
+                        "displayDescription": "protocol.messageprocessinggroup.gatewayprofileduns.doc",
+                        "group": "MessageProcessingGroup",
+                        "displayGroup": "protocol.messageprocessinggroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "Timezone",
+                        "maxLimit": null,
+                        "displayName": "protocol.messageprocessinggroup.timezone.name",
+                        "type": "string",
+                        "displayDescription": "protocol.messageprocessinggroup.timezone.doc",
+                        "group": "MessageProcessingGroup",
+                        "displayGroup": "protocol.messageprocessinggroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "Charset",
+                        "maxLimit": null,
+                        "displayName": "protocol.messageprocessinggroup.charset.name",
+                        "type": "string",
+                        "displayDescription": "protocol.messageprocessinggroup.charset.doc",
+                        "group": "MessageProcessingGroup",
+                        "displayGroup": "protocol.messageprocessinggroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "MessageProcessing",
+                        "maxLimit": null,
+                        "displayName": "protocol.messageprocessinggroup.messageprocessing.name",
+                        "type": "enum",
+                        "displayDescription": "protocol.messageprocessinggroup.messageprocessing.doc",
+                        "group": "MessageProcessingGroup",
+                        "displayGroup": "protocol.messageprocessinggroup.name",
+                        "displayEnabled": false,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [
+                            {
+                                "value": "SyncOutboundSubmission",
+                                "displayValue": "SyncOutboundSubmission"
+                            },
+                            {
+                                "value": "SynchSubmission",
+                                "displayValue": "SynchSubmission"
+                            },
+                            {
+                                "value": "SynchProcessing",
+                                "displayValue": "SynchProcessing"
+                            },
+                            {
+                                "value": "AsyncProcessing",
+                                "displayValue": "AsyncProcessing"
+                            },
+                            {
+                                "value": "SyncInboundSubmission",
+                                "displayValue": "SyncInboundSubmission"
+                            }
+                        ],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "AsyncProcessing"
+                    },
+                    {
+                        "name": "MessageParserClass",
+                        "maxLimit": null,
+                        "displayName": "protocol.messageprocessinggroup.messageparserclass.name",
+                        "type": "string",
+                        "displayDescription": "protocol.messageprocessinggroup.messageparserclass.doc",
+                        "group": "MessageProcessingGroup",
+                        "displayGroup": "protocol.messageprocessinggroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "VirusScanEnabled",
+                        "maxLimit": null,
+                        "displayName": "protocol.messageprocessinggroup.virusscanenabled.name",
+                        "type": "boolean",
+                        "displayDescription": "protocol.messageprocessinggroup.virusscanenabled.doc",
+                        "group": "MessageProcessingGroup",
+                        "displayGroup": "protocol.messageprocessinggroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "false"
+                    },
+                    {
+                        "name": "MaximumTransformFileSize",
+                        "maxLimit": "20480",
+                        "displayName": "protocol.messageprocessinggroup.transform.file.size",
+                        "type": "nonnegativeinteger",
+                        "displayDescription": "protocol.messageprocessinggroup.transform.file.size.desc",
+                        "group": "MessageProcessingGroup",
+                        "displayGroup": "protocol.messageprocessinggroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "20480"
+                    },
+                    {
+                        "name": "ReceiverDataSourceProps",
+                        "maxLimit": null,
+                        "displayName": "protocol.xmlpackaginggroup.receiverdatasourceprops.name",
+                        "type": "string",
+                        "displayDescription": "protocol.xmlpackaginggroup.receiverdatasourceprops.doc",
+                        "group": "XMLPackagingGroup",
+                        "displayGroup": "protocol.xmlpackaginggroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "ReceiverXMLMappingProps",
+                        "maxLimit": null,
+                        "displayName": "protocol.xmlpackaginggroup.receiverxmlmappingprops.name",
+                        "type": "string",
+                        "displayDescription": "protocol.xmlpackaginggroup.receiverxmlmappingprops.doc",
+                        "group": "XMLPackagingGroup",
+                        "displayGroup": "protocol.xmlpackaginggroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "SenderXMLMappingProps",
+                        "maxLimit": null,
+                        "displayName": "protocol.xmlpackaginggroup.senderxmlmappingprops.name",
+                        "type": "string",
+                        "displayDescription": "protocol.xmlpackaginggroup.senderxmlmappingprops.doc",
+                        "group": "XMLPackagingGroup",
+                        "displayGroup": "protocol.xmlpackaginggroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "SendXMLTemplate",
+                        "maxLimit": null,
+                        "displayName": "protocol.xmlpackaginggroup.sendxmltemplate.name",
+                        "type": "string",
+                        "displayDescription": "protocol.xmlpackaginggroup.sendxmltemplate.doc",
+                        "group": "XMLPackagingGroup",
+                        "displayGroup": "protocol.xmlpackaginggroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "SendEnvelopeTemplate",
+                        "maxLimit": null,
+                        "displayName": "protocol.xmlpackaginggroup.sendenvelopetemplate.name",
+                        "type": "string",
+                        "displayDescription": "protocol.xmlpackaginggroup.sendenvelopetemplate.doc",
+                        "group": "XMLPackagingGroup",
+                        "displayGroup": "protocol.xmlpackaginggroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "DigitalSignatureRequired",
+                        "maxLimit": null,
+                        "displayName": "protocol.digitalsignaturegroup.digitalsignaturerequired.name",
+                        "type": "boolean",
+                        "displayDescription": "protocol.digitalsignaturegroup.digitalsignaturerequired.doc",
+                        "group": "DigitalSignatureGroup",
+                        "displayGroup": "protocol.digitalsignaturegroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "true"
+                    },
+                    {
+                        "name": "AckDigitalSignatureRequired",
+                        "maxLimit": null,
+                        "displayName": "protocol.digitalsignaturegroup.ackdigitalsignaturerequired.name",
+                        "type": "boolean",
+                        "displayDescription": "protocol.digitalsignaturegroup.ackdigitalsignaturerequired.doc",
+                        "group": "DigitalSignatureGroup",
+                        "displayGroup": "protocol.digitalsignaturegroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "true"
+                    },
+                    {
+                        "name": "DigitalSignatureRequiredCheck",
+                        "maxLimit": null,
+                        "displayName": "protocol.digitalsignaturegroup.digitalsignaturerequiredcheck.name",
+                        "type": "boolean",
+                        "displayDescription": "protocol.digitalsignaturegroup.digitalsignaturerequiredcheck.doc",
+                        "group": "DigitalSignatureGroup",
+                        "displayGroup": "protocol.digitalsignaturegroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "true"
+                    },
+                    {
+                        "name": "DigSigHashAlgo",
+                        "maxLimit": null,
+                        "displayName": "protocol.digitalsignaturegroup.digsighashalgo.name",
+                        "type": "enum",
+                        "displayDescription": "protocol.digitalsignaturegroup.digsighashalgo.doc",
+                        "group": "DigitalSignatureGroup",
+                        "displayGroup": "protocol.digitalsignaturegroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [
+                            {
+                                "value": "RIPEMD160",
+                                "displayValue": "RIPEMD160"
+                            },
+                            {
+                                "value": "RIPEMD128",
+                                "displayValue": "RIPEMD128"
+                            },
+                            {
+                                "value": "RIPEMD256",
+                                "displayValue": "RIPEMD256"
+                            },
+                            {
+                                "value": "MD5",
+                                "displayValue": "MD5"
+                            },
+                            {
+                                "value": "SHA512",
+                                "displayValue": "SHA512"
+                            },
+                            {
+                                "value": "GOST3411",
+                                "displayValue": "GOST3411"
+                            },
+                            {
+                                "value": "SHA256",
+                                "displayValue": "SHA256"
+                            },
+                            {
+                                "value": "SHA1",
+                                "displayValue": "SHA1"
+                            },
+                            {
+                                "value": "SHA224",
+                                "displayValue": "SHA224"
+                            },
+                            {
+                                "value": "SHA384",
+                                "displayValue": "SHA384"
+                            }
+                        ],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "SHA256"
+                    },
+                    {
+                        "name": "AckDigSigHashAlgo",
+                        "maxLimit": null,
+                        "displayName": "protocol.digitalsignaturegroup.ackdigsighashalgo.name",
+                        "type": "enum",
+                        "displayDescription": "protocol.digitalsignaturegroup.ackdigsighashalgo.doc",
+                        "group": "DigitalSignatureGroup",
+                        "displayGroup": "protocol.digitalsignaturegroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [
+                            {
+                                "value": "RIPEMD128",
+                                "displayValue": "RIPEMD128"
+                            },
+                            {
+                                "value": "MD5",
+                                "displayValue": "MD5"
+                            },
+                            {
+                                "value": "SHA384",
+                                "displayValue": "SHA384"
+                            },
+                            {
+                                "value": "SHA512",
+                                "displayValue": "SHA512"
+                            },
+                            {
+                                "value": "SHA1",
+                                "displayValue": "SHA1"
+                            },
+                            {
+                                "value": "GOST3411",
+                                "displayValue": "GOST3411"
+                            },
+                            {
+                                "value": "RIPEMD160",
+                                "displayValue": "RIPEMD160"
+                            },
+                            {
+                                "value": "SHA256",
+                                "displayValue": "SHA256"
+                            },
+                            {
+                                "value": "SHA224",
+                                "displayValue": "SHA224"
+                            },
+                            {
+                                "value": "RIPEMD256",
+                                "displayValue": "RIPEMD256"
+                            }
+                        ],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "SHA256"
+                    },
+                    {
+                        "name": "SignedMIMEVersion",
+                        "maxLimit": null,
+                        "displayName": "protocol.digitalsignaturegroup.signedmimeversion.name",
+                        "type": "enum",
+                        "displayDescription": "protocol.digitalsignaturegroup.signedmimeversion.doc",
+                        "group": "DigitalSignatureGroup",
+                        "displayGroup": "protocol.digitalsignaturegroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [
+                            {
+                                "value": "S/MIME v3.1",
+                                "displayValue": "S/MIME v3.1"
+                            },
+                            {
+                                "value": "S/MIME v3.2",
+                                "displayValue": "S/MIME v3.2"
+                            }
+                        ],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "S/MIME v3.2"
+                    },
+                    {
+                        "name": "CMSAlgorithmProtect",
+                        "maxLimit": null,
+                        "displayName": "protocol.digitalsignaturegroup.cmsalgorithmprotect.name",
+                        "type": "boolean",
+                        "displayDescription": "protocol.digitalsignaturegroup.cmsalgorithmprotect.doc",
+                        "group": "DigitalSignatureGroup",
+                        "displayGroup": "protocol.digitalsignaturegroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "true"
+                    },
+                    {
+                        "name": "IncompleteTransactionAlertIntervals",
+                        "maxLimit": null,
+                        "displayName": "protocol.incompletetransactionalertgroup.incompletetransactionalertintervals.name",
+                        "type": "string",
+                        "displayDescription": "protocol.incompletetransactionalertgroup.incompletetransactionalertintervals.doc",
+                        "group": "IncompleteTransactionAlertGroup",
+                        "displayGroup": "protocol.incompletetransactionalertgroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [
+                            {
+                                "value": "Any",
+                                "displayValue": "e2na.any"
+                            }
+                        ],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "IncompleteTransactionTimeout",
+                        "maxLimit": null,
+                        "displayName": "protocol.incompletetransactionalertgroup.incompletetransactiontimeout.name",
+                        "type": "string",
+                        "displayDescription": "protocol.incompletetransactionalertgroup.incompletetransactiontimeout.doc",
+                        "group": "IncompleteTransactionAlertGroup",
+                        "displayGroup": "protocol.incompletetransactionalertgroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [
+                            {
+                                "value": "Any",
+                                "displayValue": "e2na.any"
+                            }
+                        ],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "e2net.msg.seq.generation.type",
+                        "maxLimit": null,
+                        "displayName": "protocol.messagesequencegroup.msg.seq.generation.name",
+                        "type": "enum",
+                        "displayDescription": "protocol.messagesequencegroup.msg.seq.generation.doc",
+                        "group": "MessageSequenceGroup",
+                        "displayGroup": "protocol.messagesequencegroup.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [
+                            {
+                                "value": "Disabled",
+                                "displayValue": "Disabled"
+                            },
+                            {
+                                "value": "E2netGenerated",
+                                "displayValue": "E2netGenerated"
+                            }
+                        ],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "Disabled"
+                    },
+                    {
+                        "name": "Id",
+                        "maxLimit": null,
+                        "displayName": "Id",
+                        "type": "string",
+                        "displayDescription": null,
+                        "group": "RESTGroup",
+                        "displayGroup": "rest.group.name",
+                        "displayEnabled": true,
+                        "readOnly": true,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "rest"
+                    },
+                    {
+                        "name": "ProtocolCode",
+                        "maxLimit": null,
+                        "displayName": "ProtocolCode",
+                        "type": "string",
+                        "displayDescription": null,
+                        "group": "RESTGroup",
+                        "displayGroup": "rest.group.name",
+                        "displayEnabled": false,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "REST"
+                    },
+                    {
+                        "name": "ProtocolVersion",
+                        "maxLimit": null,
+                        "displayName": "ProtocolVersion",
+                        "type": "string",
+                        "displayDescription": null,
+                        "group": "RESTGroup",
+                        "displayGroup": "rest.group.name",
+                        "displayEnabled": false,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "1.0"
+                    },
+                    {
+                        "name": "WaitForAcknowledgement",
+                        "maxLimit": null,
+                        "displayName": "protocol.http.waitforacknowledgement.name",
+                        "type": "boolean",
+                        "displayDescription": "protocol.http.waitforacknowledgement.doc",
+                        "group": "RESTGroup",
+                        "displayGroup": "rest.group.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "true"
+                    },
+                    {
+                        "name": "CustomAcknowledgmentRequired",
+                        "maxLimit": null,
+                        "displayName": "Custom Ack Required",
+                        "type": "boolean",
+                        "displayDescription": "Defines if Custom Ack needs to be generated in response to any      Inbound call using this protocol. Takes only true/false value. Default is false. If false, then default XML ack is generated.      If true, then template must be defined using CustomAcknowledgmentTemplate.",
+                        "group": "RESTGroup",
+                        "displayGroup": "rest.group.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "false"
+                    },
+                    {
+                        "name": "CustomAcknowledgmentTemplate",
+                        "maxLimit": null,
+                        "displayName": "Custom Ack Template",
+                        "type": "string",
+                        "displayDescription": "Support file name added in the connection defining the template for custom acknowledgment generation.       Template should define actual ack format i.e. actual XML or JSON to be generated with any data source variable names from which       values to be replaced in the generated ack using the $ for variable names from the data source.",
+                        "group": "RESTGroup",
+                        "displayGroup": "rest.group.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "SendAcknowledgment",
+                        "maxLimit": null,
+                        "displayName": "Send Acknowledgement",
+                        "type": "boolean",
+                        "displayDescription": "To disable the sending of Tech Ack to Partners who cannot consume it. Default is to send the Ack.",
+                        "group": "RESTGroup",
+                        "displayGroup": "rest.group.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "true"
+                    },
+                    {
+                        "name": "OutboundMethodType",
+                        "maxLimit": null,
+                        "displayName": "HTTP Method Type",
+                        "type": "enum",
+                        "displayDescription": "Indicates the type of HTTP method to use when sending documents to partners.",
+                        "group": "RESTGroup",
+                        "displayGroup": "rest.group.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [
+                            {
+                                "value": "POST",
+                                "displayValue": "POST"
+                            },
+                            {
+                                "value": "PUT",
+                                "displayValue": "PUT"
+                            }
+                        ],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": "POST"
+                    },
+                    {
+                        "name": "InboundHeaderAndLookupProps",
+                        "maxLimit": null,
+                        "displayName": "protocol.inboundheaderandlookupprops.name",
+                        "type": "enum",
+                        "displayDescription": "protocol.inboundheaderandlookupprops.doc",
+                        "group": "RESTGroup",
+                        "displayGroup": "rest.group.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": "supportfiles",
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "OutboundHeaderAndLookupProps",
+                        "maxLimit": null,
+                        "displayName": "protocol.outboundheaderandlookupprops.name",
+                        "type": "enum",
+                        "displayDescription": "protocol.outboundheaderandlookupprops.doc",
+                        "group": "RESTGroup",
+                        "displayGroup": "rest.group.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": "supportfiles",
+                        "enumeration": [],
+                        "attributes": [],
+                        "handlerClass": null,
+                        "default": null
+                    },
+                    {
+                        "name": "FileEncoding",
+                        "maxLimit": null,
+                        "displayName": "protocol.fileencoding.name",
+                        "type": "enum",
+                        "displayDescription": "protocol.fileencoding.doc",
+                        "group": "RESTGroup",
+                        "displayGroup": "rest.group.name",
+                        "displayEnabled": true,
+                        "readOnly": false,
+                        "dataProvider": null,
+                        "enumeration": [
+                            {
+                                "value": "ZLIB+MIME",
+                                "displayValue": "ZLIB/MIME"
+                            },
+                            {
+                                "value": "MIME",
+                                "displayValue": "MIME"
+                            },
+                            {
+                                "value": "ZLIB",
+                                "displayValue": "ZLIB/No Mime"
+                            },
+                            {
+                                "value": "ConditionalZip",
+                                "displayValue": "ConditionalZip"
+                            },
+                            {
+                                "value": "Zip",
+                                "displayValue": "Zip"
+                            },
+                            {
+                                "value": "None",
+                                "displayValue": "None"
+                            },
+                            {
+                                "value": "GZIP+MIME",
+                                "displayValue": "GZIP/MIME"
+                            },
+                            {
+                                "value": "GZIP",
+                                "displayValue": "GZIP/No Mime"
+                            }
+                        ],
+                        "attributes": [
+                            {
+                                "value": "Any",
+                                "displayValue": "e2na.any"
+                            }
+                        ],
+                        "handlerClass": null,
+                        "default": "None"
+                    }
+                ],
+                "propertyFormat": "PERSISTENCE",
+                "propertyEntries": [
+                    {
+                        "name": "TransportRetryLimit",
+                        "value": "2",
+                        "attributes": {},
+                        "rank": 0,
+                        "group": null
+                    },
+                    {
+                        "name": "ServerAuthRequired",
+                        "value": "ServerCertificate",
+                        "attributes": {},
+                        "rank": 0,
+                        "group": null
+                    },
+                    {
+                        "name": "AuthenticatedConnectionRequired",
+                        "value": "true",
+                        "attributes": {},
+                        "rank": 0,
+                        "group": null
+                    },
+                    {
+                        "name": "ProtocolVersion",
+                        "value": "1.0",
+                        "attributes": {},
+                        "rank": 0,
+                        "group": null
+                    },
+                    {
+                        "name": "URL",
+                        "value": "",
+                        "attributes": {},
+                        "rank": 0,
+                        "group": null
+                    },
+                    {
+                        "name": "TransportRetryInterval",
+                        "value": "00:05:00.00",
+                        "attributes": {},
+                        "rank": 0,
+                        "group": null
+                    },
+                    {
+                        "name": "GatewayProfileDuns",
+                        "value": "",
+                        "attributes": {},
+                        "rank": 0,
+                        "group": null
+                    },
+                    {
+                        "name": "CMSAlgorithmProtect",
+                        "value": "true",
+                        "attributes": {},
+                        "rank": 0,
+                        "group": null
+                    },
+                    {
+                        "name": "ProtocolCode",
+                        "value": "REST",
+                        "attributes": {},
+                        "rank": 0,
+                        "group": null
+                    },
+                    {
+                        "name": "FileEncoding",
+                        "value": "ConditionalZip",
+                        "attributes": {},
+                        "rank": 0,
+                        "group": null
+                    },
+                    {
+                        "name": "ClientAuthRequired",
+                        "value": "None",
+                        "attributes": {},
+                        "rank": 0,
+                        "group": null
+                    },
+                    {
+                        "name": "Id",
+                        "value": "rest",
+                        "attributes": {},
+                        "rank": 0,
+                        "group": null
+                    },
+                    {
+                        "name": "AuthIPAddressRange",
+                        "value": "",
+                        "attributes": {},
+                        "rank": 0,
+                        "group": null
+                    },
+                    {
+                        "name": "TransferEncoding",
+                        "value": "binary",
+                        "attributes": {},
+                        "rank": 0,
+                        "group": null
+                    },
+                    {
+                        "name": "PartnerProfileDuns",
+                        "value": "",
+                        "attributes": {},
+                        "rank": 0,
+                        "group": null
+                    }
+                ]
+            },
+            "versionedId": "2248::63"
+        }
+    },
+    "protocol": "rest"
+}
